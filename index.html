@@ -10,16 +10,16 @@
 </head>
 
 <body>
-	<div class="wrapper">
+	<div class="container">
 
-		<div class="wrapper--pink">
+		<div class="wrapper  wrapper--pink">
 
 			<div class="header">
 				<a class="header__logo" href="#"></a>
 
-				<div class="group header__group">
-					<div class="search header__search">
-						<form class="form-search">
+				<div class="group group--search-menu">
+					<div class="form-search header__form-search">
+						<form>
 							<label class="form-search__search-line--icons-search"></label>
 							<input class="form-search__search-line form-search__search-line--gray" type="text" placeholder="Введите запрос для поиска">
 							<input class="form-search__search-button form-search__search-button--gray" type="submit" value="Найти">
@@ -27,31 +27,44 @@
 					</div>
 					<!-- /header__search -->
 
-					<div class="header__menu">
-						<ul>
-							<li><a href="#">Главная</a></li>
-							<li><a href="#">Общение</a></li>
-							<li><a href="#">Дневники</a></li>
-							<li><a href="#">Поиск подруг</a></li>
-							<li><a href="#">Полезные статьи</a></li>
-						</ul>
-					</div>
+					<ul class="header__menu">
+						<li class="header__menu__item"><a class="header__menu__item__link" href="#">Главная</a></li>
+						<li class="header__menu__item"><a class="header__menu__item__link" href="#">Общение</a></li>
+						<li class="header__menu__item"><a class="header__menu__item__link" href="#">Дневники</a></li>
+						<li class="header__menu__item"><a class="header__menu__item__link" href="#">Поиск подруг</a></li>
+						<li class="header__menu__item"><a class="header__menu__item__link" href="#">Полезные статьи</a></li>
+					</ul>
 				</div>
 				<!-- /header-group -->
 
 				<div class="registration-enter">
-					<img src="" class="avatar avatar--registration-enter">
-					<a href="#" class="registration-enter__link-enter">Войти</a>
-					<a href="#" class="registration-enter__link-registration">Регистрация</a>
-					<span class="registration-enter__link-social">через <img src=""></span>
+					<img src="images/temp/avatar-registration-enter.png" class="avatar avatar--registration-enter">
+					<div class="registration-enter__enter-block">
+						<a href="#" class="registration-enter__enter-block__link-enter">Войти</a>
+						<a href="#" class="registration-enter__enter-block__link-registration">Регистрация</a>
+						<span class="registration-enter__enter-block__enter-social">через <a href="#" class="registration-enter__enter-block__link-social"><img src="images/temp/registration-enter-link-social.png"></a></span>
+					</div>
 				</div>
 				<!-- /registration-enter -->
 			</div>
 			<!-- /header -->
 		</div>
 		<!-- /wrapper--pink -->
+
+		<div class="wrapper wrapper--white"></div>
+		<!-- /wrapper--blue -->
+
+		<div class="wrapper wrapper--blue"></div>
+		<!-- /wrapper--white -->
+
+		<div class="wrapper wrapper--white"></div>
+		<!-- /wrapper--blue -->
+
+		<div class="wrapper wrapper--gray"></div>
+		<!-- /wrapper--gray -->
+
 	</div>
-	<!-- /wrapper -->
+	<!-- /container -->
 
 	
 

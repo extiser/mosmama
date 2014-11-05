@@ -18,6 +18,11 @@
 		width: 205px;
 		margin: 10px 0;
 		@include flex(flex, space-between, center, row, center, nowrap);
+		.group{
+			&--links{
+				width: 151px;
+			}
+		}
 		&__avatar{
 			width: 34px;
 			height: 34px;
@@ -26,6 +31,9 @@
 			border-bottom: 1px solid #bbc5d3;
 			&:hover{
 				border-bottom: 1px solid #2c5b91;
+			}
+			&--registration{
+				float: right;
 			}
 		}
 		&__link-social{

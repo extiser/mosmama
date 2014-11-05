@@ -18,7 +18,7 @@
 				<a class="header__logo" href="#"></a>
 
 				<div class="group group--search-menu">
-					<div class="form-search header__form-search">
+					<div class="form-search form-search--header">
 						<form>
 							<label class="form-search__search-line--icons-search"></label>
 							<input class="form-search__search-line form-search__search-line--gray" type="text" placeholder="Введите запрос для поиска">
@@ -27,22 +27,24 @@
 					</div>
 					<!-- /header__search -->
 
-					<ul class="header__menu">
-						<li class="header__menu__item"><a class="header__menu__item__link" href="#">Главная</a></li>
-						<li class="header__menu__item"><a class="header__menu__item__link" href="#">Общение</a></li>
-						<li class="header__menu__item"><a class="header__menu__item__link" href="#">Дневники</a></li>
-						<li class="header__menu__item"><a class="header__menu__item__link" href="#">Поиск подруг</a></li>
-						<li class="header__menu__item"><a class="header__menu__item__link" href="#">Полезные статьи</a></li>
-					</ul>
+					<div class="menu">
+						<a class="menu__link" href="#">Главная</a>
+						<a class="menu__link" href="#">Общение</a>
+						<a class="menu__link" href="#">Дневники</a>
+						<a class="menu__link" href="#">Поиск подруг</a>
+						<a class="menu__link" href="#">Полезные статьи</a>
+					</div>
 				</div>
 				<!-- /header-group -->
 
 				<div class="registration-enter">
-					<img src="images/temp/avatar-registration-enter.png" class="avatar avatar--registration-enter">
-					<div class="registration-enter__enter-block">
-						<a href="#" class="registration-enter__enter-block__link-enter">Войти</a>
-						<a href="#" class="registration-enter__enter-block__link-registration">Регистрация</a>
-						<span class="registration-enter__enter-block__enter-social">через <a href="#" class="registration-enter__enter-block__link-social"><img src="images/temp/registration-enter-link-social.png"></a></span>
+					<img src="images/temp/avatar-registration-enter.png" class="registration-enter__avatar">
+					<div class="group group--links">
+						<a href="#" class="registration-enter__link registration-enter__link--enter">Войти</a>
+						<a href="#" class="registration-enter__link registration-enter__link--registration">Регистрация</a>
+						<span class="registration-enter__link-social">через 
+							<img src="images/temp/registration-enter-link-social.png">
+						</span>
 					</div>
 				</div>
 				<!-- /registration-enter -->

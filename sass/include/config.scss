@@ -6,12 +6,12 @@ body{
 		family: Arial;
 		size: 14px;
 	}
+	background-color: #e5e5e5;
 }
 
 a {
 	text-decoration: none;
 	color: #2c5b91;
-	border-bottom: 1px solid #bfcdde;
 }
 
 @mixin clearfix {
@@ -24,10 +24,14 @@ a {
 	}
 }
 
-@mixin flex ($display-flex, $justify-content, $align-items) {
+
+@mixin flex ($display-flex:"flex", $justify-content:"flex-start", $align-items:"flex-start", $flex-direction:"row", $align-content:"stretch", $flex-wrap:"nowrap") {
 	@include display-flex($display-flex);
 	@include justify-content($justify-content);
 	@include align-items($align-items);
+	@include flex-direction($flex-direction);
+	@include align-content($align-content);
+	@include flex-wrap($flex-wrap);
 }
 
 @mixin background-small ($url1, $position1) {
@@ -49,4 +53,83 @@ a {
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
+}
+
+.container{
+	width: 1200px;
+	@include box-sizing;
+	color: #fff;
+	margin: 0 auto;
+}
+
+.wrapper{
+	width: 1200px;
+	@include box-sizing;
+	padding: 0 35px;
+	&--pink{
+		background-color: #f9f3ef;
+	}
+	&--blue{
+		background-color: #e8f4fa;
+	}
+	&--white{
+		background-color: #fff;
+	}
+	&--gray{
+		@include background-image(linear-gradient(to bottom, #fbf9f7, #fbfaf9));
+	}
+}
+
+.header{
+	@include flex(flex, space-between, flex-start, row);
+	padding: 15px 0;
+	&__logo{
+		display: inline-block;
+		width: 149px;
+		height: 63px;
+		background-image: url(../images/temp/logo-header.png);
+	}
+	.group{
+		&--search-menu{
+			height: 63px;
+			@include flex(flex, space-between, flex-start, column, space-between);
+			.header__menu{
+				margin: 0 0 2px 0;
+				width: 624px;
+				@include flex(flex, space-between, flex-start, row);
+				.header__menu__item{
+					.header__menu__item__link{
+						color: #674359;
+						text-transform: uppercase;
+						font-size: 16px;
+						font-weight: bold;
+						border-bottom: 1px solid #cdbec2;
+						&:hover{
+							border-bottom: 1px solid #674359;
+						}
+					}
+				}
+			}
+		}
+	}
+	.registration-enter{
+		width: 205px;
+		height: 63px;
+		@include flex(flex, space-between, center, row);
+		.registration-enter__enter-block{
+			@include flex(flex, space-between, center, row, space-between, wrap);
+			width: 155px;
+			height: 40px;
+			.registration-enter__enter-block__link-enter, .registration-enter__enter-block__link-registration{
+				border-bottom: 1px solid #bbc5d3;
+				&:hover{
+					border-bottom: 1px solid #2c5b91;
+				}
+			}
+			.registration-enter__enter-block__enter-social{
+				color: #989898;
+				font-style: italic;
+			}
+		}
+	}
 }

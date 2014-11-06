@@ -5,6 +5,7 @@
 	&--white{
 		font-size: 14px;
 		color: #333;
+		background-color: #fff;
 		padding: 9px 11px 8px 38px;
 		border: 1px solid #d7cebf;
 		@include border-radius(5px);
@@ -63,6 +64,10 @@
 		padding-left: 40px;
 		padding-right: 40px;
 	}
+	&--start-communicating{
+		width: 296px;
+	}
+
 	&--icons-women{
 		&:before {
 			position: absolute;
@@ -234,7 +239,7 @@
 		color: #bab6b6;
 		@include border-radius(5px 0 0 5px);
 		&--icons-search{
-			position: relative;;
+			position: relative;
 			&:before {
 				content: ".";
 				text-indent: -9999px;
@@ -287,6 +292,7 @@
 	@include clearfix;
 	position: relative;
 	&__add-line{
+		background-color: #fff;
 		font-size: 14px;
 		float: left;
 		color: #bab6b6;
@@ -581,6 +587,49 @@
 	resize: none;
 }
 
+.input-line{
+	font-size: 14px;
+	color: #b6b6b6;
+	padding: 10px 11px 10px 40px;
+	border: 1px solid #ebe5dc;
+	@include border-radius(5px);
+	@include box-shadow(#ebe5dc 0px -1px 1px 1px);
+	width: 243px;
+	&--icons-woman{
+		position: relative;
+		&:before {
+			content: ".";
+			text-indent: -9999px;
+			@extend .icons--woman;
+			position: absolute;
+			top: 0px;
+			left: 12px;
+		}
+	}
+	&--icons-letter-small{
+		position: relative;
+		&:before {
+			content: ".";
+			text-indent: -9999px;
+			@extend .icons--letter-small;
+			position: absolute;
+			top: 3px;
+			left: 12px;
+		}
+	}
+	&--icons-lock{
+		position: relative;
+		&:before {
+			content: ".";
+			text-indent: -9999px;
+			@extend .icons--lock;
+			position: absolute;
+			top: 2px;
+			left: 12px;
+		}
+	}
+}
+
 .icons {
 	display: inline-block;
 	&--house{
@@ -642,6 +691,14 @@
 	&--green-check{
 		@include background-small(green-check, 0);
 		@include sprite-dimensions($icons1, green-check);
+	}
+	&--letter-small{
+		@include background-small(letter-small, 0);
+		@include sprite-dimensions($icons1, letter-small);
+	}
+	&--lock{
+		@include background-small(lock, 0);
+		@include sprite-dimensions($icons1, lock);
 	}
 	//background-big
 	&--smile{
@@ -707,6 +764,10 @@
 	&--smile{
 		@include background-big(smile, 0);
 		@include sprite-dimensions($icons2, smile);
+	}
+	&--woman{
+		@include background-big(woman, 0);
+		@include sprite-dimensions($icons2, woman);
 	}
 }
 

@@ -5,7 +5,7 @@ Error: Undefined mixin 'flex'.
 
 1: .header{
 2: 	@include flex(flex, space-between, flex-start, row);
-3: 	padding: 15px 0;
+3: 	padding: 15px 0 20px;
 4: 	&__logo{
 5: 		display: inline-block;
 6: 		width: 149px;
@@ -66,4 +66,4 @@ C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.7/vendor/listen/lib/listen/adapt
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'flex'.\A         on line 2 of C:/Git/mosmama/sass/include/header.scss, in `flex'\A         from line 2 of C:/Git/mosmama/sass/include/header.scss\A \A 1: .header{\A 2: 	@include flex(flex, space-between, flex-start, row);\A 3: 	padding: 15px 0;\A 4: 	&__logo{\A 5: 		display: inline-block;\A 6: 		width: 149px;\A 7: 		height: 63px;"; }
+  content: "Error: Undefined mixin 'flex'.\A         on line 2 of C:/Git/mosmama/sass/include/header.scss, in `flex'\A         from line 2 of C:/Git/mosmama/sass/include/header.scss\A \A 1: .header{\A 2: 	@include flex(flex, space-between, flex-start, row);\A 3: 	padding: 15px 0 20px;\A 4: 	&__logo{\A 5: 		display: inline-block;\A 6: 		width: 149px;\A 7: 		height: 63px;"; }

@@ -1,0 +1,47 @@
+.group{
+	&--photos-wall-speed-registration{
+		@include flex(flex, space-between, flex-start, row, space-between, nowrap);
+	}
+}
+
+.photos-wall{
+	width: 757px;
+	@include flex(flex, space-between, flex-start, row, space-between, wrap);
+	&__item{
+		width: 79px;
+		height: 79px;
+		margin: 0 0 5px 0;
+		&--long{
+			width: 164px;
+		}
+	}
+}
+
+.speed-registration{
+	width: 336px;
+	@include box-sizing;
+	border: 1px solid #efe9e6;
+	background-color: #ffffff;
+	padding: 30px 20px 25px;
+	@include border-radius(5px);
+	&__title{
+		color: #606060;
+		font-size: 13px;
+		display: block;
+		text-align: center;
+		line-height: 16px;
+		margin: 0 auto 15px;
+		width: 230px;
+		&--top{
+			font-family: 'Roboto Condensed Bold';
+			font-size: 21px;
+			color: #c94073;
+			text-transform: uppercase;
+			margin: 0 0 10px 0;
+			width: 100%;
+		}
+	}
+	&__input-line{
+		margin: 0 0 15px 0;
+	}
+}

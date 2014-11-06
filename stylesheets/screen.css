@@ -992,6 +992,9 @@ a {
   -webkit-flex-wrap: nowrap;
   flex-wrap: nowrap;
 }
+.header .registration-enter .group--links {
+  width: 151px;
+}
 .header .registration-enter__avatar {
   width: 34px;
   height: 34px;
@@ -1001,6 +1004,9 @@ a {
 }
 .header .registration-enter__link:hover {
   border-bottom: 1px solid #2c5b91;
+}
+.header .registration-enter__link--registration {
+  float: right;
 }
 .header .registration-enter__link-social {
   display: inline-block;

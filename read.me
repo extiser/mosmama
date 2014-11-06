@@ -19,24 +19,31 @@
 
 
 
-GIT обновление удаленного репозитория из локального:
-
-git checkout master			# переключение на ветку master
-git status 					# просмотр измененных файлов
-git add .					# добавление всех измененных файлов в индекс
-git commit -m "comment"		# коммит изменений
-git push origin master		# пуш изменений в ветку master на удаленном репозитории
 
 
 
-GIT обновление ветки после PR:
-/*
-cd e://git/mosmama
 
-git checkout master			# переключение на ветку master
-git pull					# внесение изменений в локальный репозиторий
 
-git checkout gh-pages		# переключение на ветку gh-pages
-git pull origin gh-pages	# внесение изменений с ветки origin в ветку gh-pages
-git push origin gh-pages	# вставка изменений в ветку gh-pages
-*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+git add .
+$ git status // посмотреть какие изменения произошли
+$ git commit -m 'Some descriptive commit message'
+$ git push origin master
+$ git checkout gh-pages // сменить ветку на gh-pages
+$ git rebase master // синхронизировать gh-pages c master (git merge master)
+$ git push origin gh-pages // отправить ветку на сервер.
+$ git checkout master // вернуться в master

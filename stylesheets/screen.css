@@ -87,9 +87,12 @@ input:focus, select:focus, textarea:focus {
 }
 .wrapper--pink {
   background-color: #f9f3ef;
+  border-bottom: 1px solid #f3e8e1;
 }
 .wrapper--blue {
-  background-color: #e8f4fa;
+  background: #e8f4fa url(../images/temp/wrapper-blue-bg.png) repeat-x bottom;
+  border-top: 1px solid #cee4ef;
+  border-bottom: 1px solid #cde3ef;
 }
 .wrapper--white {
   background-color: #fff;
@@ -1232,6 +1235,20 @@ input:focus, select:focus, textarea:focus {
   -webkit-flex-wrap: nowrap;
   flex-wrap: nowrap;
 }
+.group--title {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-content: space-between;
+  align-content: space-between;
+  -webkit-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
 
 .photos-wall {
   width: 757px;
@@ -1297,21 +1314,22 @@ input:focus, select:focus, textarea:focus {
 .new-diary-entries {
   padding: 38px 0px 27px 0;
 }
-.new-diary-entries__title {
-  display: inline-block;
-  float: left;
-}
 
 .panel-diaries {
-  display: inline-block;
-  float: right;
+  position: relative;
+  padding: 0 20px 0 0;
 }
-.panel-diaries:after {
-  content: ".";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
+.panel-diaries__slash {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  margin-left: -17px;
+}
+.panel-diaries__link {
+  margin: 0 0 0 25px;
+}
+.panel-diaries__link--first {
+  margin: 0 25px 0 20px;
 }
 
 .entries {

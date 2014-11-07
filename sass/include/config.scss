@@ -70,9 +70,12 @@ input:focus, select:focus, textarea:focus {outline: none}
 	padding: 0 35px;
 	&--pink{
 		background-color: #f9f3ef;
+		border-bottom: 1px solid #f3e8e1;
 	}
 	&--blue{
-		background-color: #e8f4fa;
+		background: #e8f4fa url(../images/temp/wrapper-blue-bg.png) repeat-x bottom;
+		border-top: 1px solid #cee4ef;
+		border-bottom: 1px solid #cde3ef;
 	}
 	&--white{
 		background-color: #fff;

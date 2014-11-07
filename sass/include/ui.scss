@@ -369,12 +369,9 @@
 .select-form{
 	border: 1px solid #dcdbdb;
 	font-size: 16px;
-	width: 303px;
-	height: 34px;
+	padding: 6px 10px;
 	@include box-sizing;
 	@include border-radius(5px);
-	&__point{
-	}
 }
 
 .breadcrumbs{
@@ -796,7 +793,79 @@
 }
 
 .label {
+	display: block;
 	font-size: 16px;
 	color: #c22462;
 	font-weight: bold;
+	margin-top: 12px;
+	margin-bottom: 8px;
+	&--small {
+		text-transform: uppercase;
+		color: #a59d9d;
+		font-size: 12px;
+		font-weight: normal;
+		margin-bottom: 4px; 
+	}
+}
+
+.iv-calendar {
+	width: 208px;
+	margin-bottom: 60px;
+	&__month-title {
+		width: 208px;
+		font-size: 16px;
+		color: #000;
+		text-align: center;
+	}
+	&__month-week {
+		@include flex(flex, space-between, flex-start, row, space-between, wrap);
+	}
+	&__month-day {
+		width: 28px;
+		height: 28px;
+		@include box-sizing;
+		text-align: center;
+		padding-top: 7px;
+		font-size: 15px;
+		color: #000;
+		margin-bottom: 2px;
+		@include border-radius(5px);
+		&--name {
+			font-size: 12px;
+			color: #a59d9d;
+			text-transform: lowercase;
+		}
+		&--empty {
+			background: #f4eef0;
+		}
+		&--orange {
+			background: #f0ac41;
+		}
+		&--orange-light {
+			background: #f3e5a5;
+		}
+		&--blue {
+			background: #c4e6e5;
+		}
+		&--green {
+			background: #87e893;
+		}
+		&--pink {
+			background: #ee5f94;
+		}
+	}
+}
+
+.iv-annotation {
+	width: 208px;
+	font-size: 14px;
+	color: #000;
+	margin-bottom: 15px;
+	@include flex(flex, flex-start, center, row, space-between, wrap);
+	&__day {
+		margin-right: 10px;
+	}
+	&__day-comment {
+		width: 170px;
+	}
 }

@@ -1020,6 +1020,12 @@ input:focus {
   color: #3e526b;
 }
 
+.label {
+  font-size: 16px;
+  color: #c22462;
+  font-weight: bold;
+}
+
 @font-face {
   font-family: 'Roboto Condensed Bold';
   src: url("../fonts/robotocondensed-bold-webfont.eot");

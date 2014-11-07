@@ -176,6 +176,7 @@
 
 .links{
 	text-decoration: none;
+	font-size: 14px;
 	&--pink{
 		color: #c22462;
 		border-bottom: 1px solid #edbdd0;
@@ -354,16 +355,14 @@
 	}
 }
 
-.form-select{
-	&__select{
-		border: 1px solid #dcdbdb;
-		font-size: 16px;
-		width: 303px;
-		height: 34px;
-		@include box-sizing;
-		@include border-radius(5px);
-		&__point{
-		}
+.select-form{
+	border: 1px solid #dcdbdb;
+	font-size: 16px;
+	width: 303px;
+	height: 34px;
+	@include box-sizing;
+	@include border-radius(5px);
+	&__point{
 	}
 }
 

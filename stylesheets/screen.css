@@ -264,6 +264,7 @@ input:focus {
 
 .links {
   text-decoration: none;
+  font-size: 14px;
 }
 .links--pink {
   color: #c22462;
@@ -484,7 +485,7 @@ input:focus {
   z-index: 100;
 }
 
-.form-select__select {
+.select-form {
   border: 1px solid #dcdbdb;
   font-size: 16px;
   width: 303px;
@@ -1073,12 +1074,6 @@ input:focus {
   width: 34px;
   height: 34px;
 }
-.header .registration-enter__link {
-  border-bottom: 1px solid #bbc5d3;
-}
-.header .registration-enter__link:hover {
-  border-bottom: 1px solid #2c5b91;
-}
 .header .registration-enter__link--registration {
   float: right;
 }
@@ -1090,6 +1085,20 @@ input:focus {
 }
 
 .group--photos-wall-speed-registration {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-content: space-between;
+  align-content: space-between;
+  -webkit-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+.group--entries {
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: space-between;
@@ -1139,6 +1148,7 @@ input:focus {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
+  margin: 0 0 20px 0;
 }
 .speed-registration__title {
   color: #606060;
@@ -1159,6 +1169,42 @@ input:focus {
 }
 .speed-registration__input-line {
   margin: 0 0 15px 0;
+}
+
+.new-diary-entries {
+  padding: 38px 0px 27px 0;
+}
+
+.entries {
+  margin: 10px 0 0 0;
+  width: 336px;
+  padding: 15px 20px 0px 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.entries--center {
+  width: 405px;
+  padding: 15px 35px 0px 32px;
+  border-right: 1px dotted #e3e3e3;
+  border-left: 1px dotted #e3e3e3;
+}
+.entries .entry {
+  margin: 0 0 25px 0;
+}
+.entries .entry__avatar {
+  float: left;
+  margin: 0 15px 0 0;
+}
+.entries .entry__link {
+  line-height: 21px;
+}
+.entries .entry__link:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
 }
 
 .menu {

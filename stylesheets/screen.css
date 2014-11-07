@@ -957,7 +957,11 @@ input:focus, select:focus, textarea:focus {
   width: 14px;
 }
 .icons--child-big, .select-file--child:before {
+<<<<<<< HEAD
   background-image: url('../images/icons2-s136de4b3f8.png');
+=======
+  background-image: url('../images/icons2-s03c04fe3aa.png');
+>>>>>>> a4071863e4e3c67e5dff411a3c18ad4f2f04d4d2
   background-repeat: no-repeat;
   background-position: 0 -236px;
   height: 90px;

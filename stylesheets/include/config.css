@@ -1,20 +1,20 @@
 /*
 Error: Undefined mixin 'background-image'.
-        on line 81 of C:/mosmama/sass/include/config.scss, in `background-image'
-        from line 81 of C:/mosmama/sass/include/config.scss
+        on line 84 of C:/mosmama/sass/include/config.scss, in `background-image'
+        from line 84 of C:/mosmama/sass/include/config.scss
 
-76: 	}
-77: 	&--white{
-78: 		background-color: #fff;
 79: 	}
-80: 	&--gray{
-81: 		@include background-image(linear-gradient(to bottom, #fbf9f7, #fbfaf9));
+80: 	&--white{
+81: 		background-color: #fff;
 82: 	}
-83: }
+83: 	&--gray{
+84: 		@include background-image(linear-gradient(to bottom, #fbf9f7, #fbfaf9));
+85: 	}
+86: }
 
 Backtrace:
-C:/mosmama/sass/include/config.scss:81:in `background-image'
-C:/mosmama/sass/include/config.scss:81
+C:/mosmama/sass/include/config.scss:84:in `background-image'
+C:/mosmama/sass/include/config.scss:84
 C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:338:in `block in visit_mixin'
 C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.7/lib/sass/stack.rb:115:in `with_frame'
@@ -78,4 +78,4 @@ C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.7/vendor/listen/lib/listen/adapt
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'background-image'.\A         on line 81 of C:/mosmama/sass/include/config.scss, in `background-image'\A         from line 81 of C:/mosmama/sass/include/config.scss\A \A 76: 	}\A 77: 	&--white{\A 78: 		background-color: #fff;\A 79: 	}\A 80: 	&--gray{\A 81: 		@include background-image(linear-gradient(to bottom, #fbf9f7, #fbfaf9));\A 82: 	}\A 83: }"; }
+  content: "Error: Undefined mixin 'background-image'.\A         on line 84 of C:/mosmama/sass/include/config.scss, in `background-image'\A         from line 84 of C:/mosmama/sass/include/config.scss\A \A 79: 	}\A 80: 	&--white{\A 81: 		background-color: #fff;\A 82: 	}\A 83: 	&--gray{\A 84: 		@include background-image(linear-gradient(to bottom, #fbf9f7, #fbfaf9));\A 85: 	}\A 86: }"; }

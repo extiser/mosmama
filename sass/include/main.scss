@@ -5,6 +5,9 @@
 	&--entries{
 		@include flex(flex, space-between, flex-start, row, space-between, nowrap);
 	}
+	&--title{
+		@include flex(flex, space-between, flex-start, row, space-between, nowrap);
+	}
 }
 
 .photos-wall{
@@ -53,15 +56,25 @@
 .new-diary-entries{
 	padding: 38px 0px 27px 0;
 	&__title{
-		display: inline-block;
-		float: left;
 	}
 }
 .panel-diaries{
-	display: inline-block;
-	float: right;
-	@include clearfix;
+	position: relative;
+	padding: 0 20px 0 0;
+	&__slash{
+		position: absolute;
+		top: 0px;
+		left: 50%;
+		margin-left: -17px;
+	}
+	&__link{
+		margin: 0 0 0 25px;
+		&--first{
+			margin: 0 25px 0 20px;
+		}
+	}
 }
+
 
 .entries{
 	margin: 10px 0 0 0;

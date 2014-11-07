@@ -10,7 +10,7 @@ Error: Undefined mixin 'flex'.
 5: 	&--entries{
 6: 		@include flex(flex, space-between, flex-start, row, space-between, nowrap);
 7: 	}
-8: }
+8: 	&--title{
 
 Backtrace:
 C:/mosmama/sass/include/main.scss:3:in `flex'
@@ -78,4 +78,4 @@ C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.7/vendor/listen/lib/listen/adapt
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'flex'.\A         on line 3 of C:/mosmama/sass/include/main.scss, in `flex'\A         from line 3 of C:/mosmama/sass/include/main.scss\A \A 1: .group{\A 2: 	&--photos-wall-speed-registration{\A 3: 		@include flex(flex, space-between, flex-start, row, space-between, nowrap);\A 4: 	}\A 5: 	&--entries{\A 6: 		@include flex(flex, space-between, flex-start, row, space-between, nowrap);\A 7: 	}\A 8: }"; }
+  content: "Error: Undefined mixin 'flex'.\A         on line 3 of C:/mosmama/sass/include/main.scss, in `flex'\A         from line 3 of C:/mosmama/sass/include/main.scss\A \A 1: .group{\A 2: 	&--photos-wall-speed-registration{\A 3: 		@include flex(flex, space-between, flex-start, row, space-between, nowrap);\A 4: 	}\A 5: 	&--entries{\A 6: 		@include flex(flex, space-between, flex-start, row, space-between, nowrap);\A 7: 	}\A 8: 	&--title{"; }

@@ -683,7 +683,7 @@ input:focus {
   content: "";
 }
 
-.select {
+.select-file {
   display: inline-block;
   border: 1px solid #dae6f1;
   background-color: #f5f9fb;
@@ -700,10 +700,10 @@ input:focus {
   font-size: 16px;
   padding-top: 135px;
 }
-.select--child {
+.select-file--child {
   position: relative;
 }
-.select--child:before {
+.select-file--child:before {
   position: absolute;
   left: 50%;
   margin-left: -45px;
@@ -939,7 +939,7 @@ input:focus {
   height: 15px;
   width: 14px;
 }
-.icons--child-big, .select--child:before {
+.icons--child-big, .select-file--child:before {
   background-image: url('../images/icons2-s03c04fe3aa.png');
   background-repeat: no-repeat;
   background-position: 0 -236px;

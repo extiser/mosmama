@@ -230,6 +230,17 @@
 			@extend .icons--pink-plus;
 		}
 	}
+	&--diary{
+		position: relative;
+		margin: 0 0 0 20px;
+		&:before {
+			position: absolute;
+			left: -20px;
+			top: 2px;
+			content: "";
+			@extend .icons--diary;
+		}
+	}
 }
 
 .form-search{
@@ -553,7 +564,7 @@
 		}
 	}
 }
-.select-file {
+.select-file{
 	display: inline-block;
 	border: 1px solid #dae6f1;
 	background-color: #f5f9fb;
@@ -698,6 +709,10 @@
 	&--lock{
 		@include background-small(lock, 0);
 		@include sprite-dimensions($icons1, lock);
+	}
+	&--diary{
+		@include background-small(diary, 0);
+		@include sprite-dimensions($icons1, diary);
 	}
 	//background-big
 	&--smile{

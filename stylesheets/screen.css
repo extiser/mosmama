@@ -65,7 +65,7 @@ a {
   color: #2c5b91;
 }
 
-input:focus {
+input:focus, select:focus, textarea:focus {
   outline: none;
 }
 
@@ -313,6 +313,16 @@ input:focus {
 .links--add:before {
   position: absolute;
   left: -15px;
+  top: 2px;
+  content: "";
+}
+.links--diary {
+  position: relative;
+  margin: 0 0 0 20px;
+}
+.links--diary:before {
+  position: absolute;
+  left: -20px;
   top: 2px;
   content: "";
 }
@@ -683,7 +693,7 @@ input:focus {
   content: "";
 }
 
-.select {
+.select-file {
   display: inline-block;
   border: 1px solid #dae6f1;
   background-color: #f5f9fb;
@@ -700,10 +710,10 @@ input:focus {
   font-size: 16px;
   padding-top: 135px;
 }
-.select--child {
+.select-file--child {
   position: relative;
 }
-.select--child:before {
+.select-file--child:before {
   position: absolute;
   left: 50%;
   margin-left: -45px;
@@ -772,240 +782,247 @@ input:focus {
   display: inline-block;
 }
 .icons--house, .breadcrumbs__link--first:before {
-  background-image: url('../images/icons1-sbc2378b9cb.png');
+  background-image: url('../images/icons1-s72fd4e09fb.png');
   background-repeat: no-repeat;
-  background-position: 0 -1095px;
+  background-position: 0 -1210px;
   height: 11px;
   width: 12px;
 }
 .icons--right-arrow, .breadcrumbs__link:before, .breadcrumbs__active:before {
-  background-image: url('../images/icons1-sbc2378b9cb.png');
+  background-image: url('../images/icons1-s72fd4e09fb.png');
   background-repeat: no-repeat;
-  background-position: 0 -1764px;
+  background-position: 0 -1879px;
   height: 7px;
   width: 8px;
 }
 .icons--pink-cross {
-  background-image: url('../images/icons1-sbc2378b9cb.png');
+  background-image: url('../images/icons1-s72fd4e09fb.png');
   background-repeat: no-repeat;
-  background-position: 0 -1540px;
+  background-position: 0 -1655px;
   height: 12px;
   width: 12px;
 }
 .icons--gray-cross {
-  background-image: url('../images/icons1-sbc2378b9cb.png');
+  background-image: url('../images/icons1-s72fd4e09fb.png');
   background-repeat: no-repeat;
-  background-position: 0 -762px;
+  background-position: 0 -877px;
   height: 12px;
   width: 12px;
 }
 .icons--exit {
-  background-image: url('../images/icons1-sbc2378b9cb.png');
+  background-image: url('../images/icons1-s72fd4e09fb.png');
   background-repeat: no-repeat;
-  background-position: 0 -650px;
+  background-position: 0 -765px;
   height: 12px;
   width: 15px;
 }
 .icons--comments, .meta-info--comments:before {
-  background-image: url('../images/icons1-sbc2378b9cb.png');
+  background-image: url('../images/icons1-s72fd4e09fb.png');
   background-repeat: no-repeat;
   background-position: 0 -112px;
   height: 12px;
   width: 12px;
 }
 .icons--time, .meta-info--time:before {
-  background-image: url('../images/icons1-sbc2378b9cb.png');
+  background-image: url('../images/icons1-s72fd4e09fb.png');
   background-repeat: no-repeat;
-  background-position: 0 -1871px;
+  background-position: 0 -1986px;
   height: 12px;
   width: 12px;
 }
 .icons--gray-like, .meta-info--likes:before {
-  background-image: url('../images/icons1-sbc2378b9cb.png');
+  background-image: url('../images/icons1-s72fd4e09fb.png');
   background-repeat: no-repeat;
-  background-position: 0 -874px;
+  background-position: 0 -989px;
   height: 11px;
   width: 12px;
 }
 .icons--delta-blue {
-  background-image: url('../images/icons1-sbc2378b9cb.png');
+  background-image: url('../images/icons1-s72fd4e09fb.png');
   background-repeat: no-repeat;
   background-position: 0 -335px;
   height: 5px;
   width: 6px;
 }
 .icons--blue-cross, .links--delete:before {
-  background-image: url('../images/icons1-sbc2378b9cb.png');
+  background-image: url('../images/icons1-s72fd4e09fb.png');
   background-repeat: no-repeat;
   background-position: 0 0;
   height: 12px;
   width: 12px;
 }
 .icons--pink-plus, .links--add:before {
-  background-image: url('../images/icons1-sbc2378b9cb.png');
+  background-image: url('../images/icons1-s72fd4e09fb.png');
   background-repeat: no-repeat;
-  background-position: 0 -1652px;
+  background-position: 0 -1767px;
   height: 12px;
   width: 12px;
 }
 .icons--online, .online:before {
-  background-image: url('../images/icons1-sbc2378b9cb.png');
+  background-image: url('../images/icons1-s72fd4e09fb.png');
   background-repeat: no-repeat;
-  background-position: 0 -1428px;
+  background-position: 0 -1543px;
   height: 12px;
   width: 12px;
 }
 .icons--delta-pink, .online:after {
-  background-image: url('../images/icons1-sbc2378b9cb.png');
+  background-image: url('../images/icons1-s72fd4e09fb.png');
   background-repeat: no-repeat;
   background-position: 0 -545px;
   height: 5px;
   width: 6px;
 }
 .icons--crimson-cross, .btn--icons-crimson-cross:before {
-  background-image: url('../images/icons1-sbc2378b9cb.png');
+  background-image: url('../images/icons1-s72fd4e09fb.png');
   background-repeat: no-repeat;
   background-position: 0 -224px;
   height: 11px;
   width: 11px;
 }
 .icons--green-check, .btn--icons-green-check:before {
-  background-image: url('../images/icons1-sbc2378b9cb.png');
+  background-image: url('../images/icons1-s72fd4e09fb.png');
   background-repeat: no-repeat;
-  background-position: 0 -985px;
+  background-position: 0 -1100px;
   height: 10px;
   width: 12px;
 }
 .icons--letter-small, .input-line--icons-letter-small:before {
-  background-image: url('../images/icons1-sbc2378b9cb.png');
+  background-image: url('../images/icons1-s72fd4e09fb.png');
   background-repeat: no-repeat;
-  background-position: 0 -1206px;
+  background-position: 0 -1321px;
   height: 10px;
   width: 14px;
 }
 .icons--lock, .input-line--icons-lock:before {
-  background-image: url('../images/icons1-sbc2378b9cb.png');
+  background-image: url('../images/icons1-s72fd4e09fb.png');
   background-repeat: no-repeat;
-  background-position: 0 -1316px;
+  background-position: 0 -1431px;
   height: 12px;
   width: 11px;
 }
-.icons--smile {
-  background-image: url('../images/icons2-s03c04fe3aa.png');
+.icons--diary, .links--diary:before {
+  background-image: url('../images/icons1-s72fd4e09fb.png');
   background-repeat: no-repeat;
-  background-position: 0 -1647px;
+  background-position: 0 -650px;
+  height: 15px;
+  width: 14px;
+}
+.icons--smile {
+  background-image: url('../images/icons2-s136de4b3f8.png');
+  background-repeat: no-repeat;
+  background-position: 0 -1773px;
   height: 20px;
   width: 20px;
 }
 .icons--photo-icon {
-  background-image: url('../images/icons2-s03c04fe3aa.png');
+  background-image: url('../images/icons2-s136de4b3f8.png');
   background-repeat: no-repeat;
   background-position: 0 -1157px;
   height: 17px;
   width: 22px;
 }
 .icons--share {
-  background-image: url('../images/icons2-s03c04fe3aa.png');
+  background-image: url('../images/icons2-s136de4b3f8.png');
   background-repeat: no-repeat;
   background-position: 0 -1529px;
   height: 18px;
   width: 17px;
 }
 .icons--search, .form-search__search-line--icons-search:before {
-  background-image: url('../images/icons2-s03c04fe3aa.png');
+  background-image: url('../images/icons2-s136de4b3f8.png');
   background-repeat: no-repeat;
   background-position: 0 -1413px;
   height: 16px;
   width: 16px;
 }
 .icons--child-gray, .in-frame--child-gray:before {
-  background-image: url('../images/icons2-s03c04fe3aa.png');
+  background-image: url('../images/icons2-s136de4b3f8.png');
   background-repeat: no-repeat;
   background-position: 0 -553px;
   height: 41px;
   width: 41px;
 }
 .icons--camera-pink, .in-frame--camera-pink:before {
-  background-image: url('../images/icons2-s03c04fe3aa.png');
+  background-image: url('../images/icons2-s136de4b3f8.png');
   background-repeat: no-repeat;
   background-position: 0 -121px;
   height: 15px;
   width: 16px;
 }
 .icons--pencil, .btn--icons-pencil:before, .in-frame--pencil:before {
-  background-image: url('../images/icons2-s03c04fe3aa.png');
+  background-image: url('../images/icons2-s136de4b3f8.png');
   background-repeat: no-repeat;
   background-position: 0 -1042px;
   height: 15px;
   width: 14px;
 }
-.icons--child-big, .select--child:before {
-  background-image: url('../images/icons2-s03c04fe3aa.png');
+.icons--child-big, .select-file--child:before {
+  background-image: url('../images/icons2-s136de4b3f8.png');
   background-repeat: no-repeat;
   background-position: 0 -236px;
   height: 90px;
   width: 90px;
 }
 .icons--child-blue, .add--child:before {
-  background-image: url('../images/icons2-s03c04fe3aa.png');
+  background-image: url('../images/icons2-s136de4b3f8.png');
   background-repeat: no-repeat;
   background-position: 0 -426px;
   height: 27px;
   width: 27px;
 }
 .icons--women, .btn--icons-women:before, .add-form__add-button--icons-women:before {
-  background-image: url('../images/icons2-s03c04fe3aa.png');
+  background-image: url('../images/icons2-s136de4b3f8.png');
   background-repeat: no-repeat;
-  background-position: 0 -1997px;
+  background-position: 0 -2123px;
   height: 16px;
   width: 21px;
 }
 .icons--like-pink, .links--like:before {
-  background-image: url('../images/icons2-s03c04fe3aa.png');
+  background-image: url('../images/icons2-s136de4b3f8.png');
   background-repeat: no-repeat;
   background-position: 0 -924px;
   height: 18px;
   width: 18px;
 }
 .icons--camera-blue, .add--photo:before {
-  background-image: url('../images/icons2-s03c04fe3aa.png');
+  background-image: url('../images/icons2-s136de4b3f8.png');
   background-repeat: no-repeat;
   background-position: 0 0;
   height: 21px;
   width: 24px;
 }
 .icons--letter, .btn--icons-letter:before {
-  background-image: url('../images/icons2-s03c04fe3aa.png');
+  background-image: url('../images/icons2-s136de4b3f8.png');
   background-repeat: no-repeat;
   background-position: 0 -810px;
   height: 14px;
   width: 20px;
 }
 .icons--cogwheel, .btn--icons-cogwheel:before {
-  background-image: url('../images/icons2-s03c04fe3aa.png');
+  background-image: url('../images/icons2-s136de4b3f8.png');
   background-repeat: no-repeat;
   background-position: 0 -694px;
   height: 16px;
   width: 16px;
 }
 .icons--wifi, .btn--icons-wifi:before {
-  background-image: url('../images/icons2-s03c04fe3aa.png');
+  background-image: url('../images/icons2-s136de4b3f8.png');
   background-repeat: no-repeat;
-  background-position: 0 -1767px;
+  background-position: 0 -1893px;
   height: 14px;
   width: 13px;
 }
 .icons--smile {
-  background-image: url('../images/icons2-s03c04fe3aa.png');
+  background-image: url('../images/icons2-s136de4b3f8.png');
   background-repeat: no-repeat;
-  background-position: 0 -1647px;
+  background-position: 0 -1773px;
   height: 20px;
   width: 20px;
 }
 .icons--woman, .input-line--icons-woman:before {
-  background-image: url('../images/icons2-s03c04fe3aa.png');
+  background-image: url('../images/icons2-s136de4b3f8.png');
   background-repeat: no-repeat;
-  background-position: 0 -1881px;
+  background-position: 0 -2007px;
   height: 16px;
   width: 14px;
 }
@@ -1155,6 +1172,9 @@ input:focus {
   -webkit-border-radius: 5px;
   border-radius: 5px;
   margin: 0 0 20px 0;
+  -moz-box-shadow: #e6e1dd 0px 1px 1px 1px;
+  -webkit-box-shadow: #e6e1dd 0px 1px 1px 1px;
+  box-shadow: #e6e1dd 0px 1px 1px 1px;
 }
 .speed-registration__title {
   color: #606060;

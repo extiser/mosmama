@@ -498,8 +498,7 @@ input:focus, select:focus, textarea:focus {
 .select-form {
   border: 1px solid #dcdbdb;
   font-size: 16px;
-  width: 303px;
-  height: 34px;
+  padding: 6px 10px;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -1038,9 +1037,107 @@ input:focus, select:focus, textarea:focus {
 }
 
 .label {
+  display: block;
   font-size: 16px;
   color: #c22462;
   font-weight: bold;
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+.label--small {
+  text-transform: uppercase;
+  color: #a59d9d;
+  font-size: 12px;
+  font-weight: normal;
+  margin-bottom: 4px;
+}
+
+.iv-calendar {
+  width: 208px;
+  margin-bottom: 60px;
+}
+.iv-calendar__month-title {
+  width: 208px;
+  font-size: 16px;
+  color: #000;
+  text-align: center;
+}
+.iv-calendar__month-week {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-content: space-between;
+  align-content: space-between;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.iv-calendar__month-day {
+  width: 28px;
+  height: 28px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  text-align: center;
+  padding-top: 7px;
+  font-size: 15px;
+  color: #000;
+  margin-bottom: 2px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+.iv-calendar__month-day--name {
+  font-size: 12px;
+  color: #a59d9d;
+  text-transform: lowercase;
+}
+.iv-calendar__month-day--empty {
+  background: #f4eef0;
+}
+.iv-calendar__month-day--orange {
+  background: #f0ac41;
+}
+.iv-calendar__month-day--orange-light {
+  background: #f3e5a5;
+}
+.iv-calendar__month-day--blue {
+  background: #c4e6e5;
+}
+.iv-calendar__month-day--green {
+  background: #87e893;
+}
+.iv-calendar__month-day--pink {
+  background: #ee5f94;
+}
+
+.iv-annotation {
+  width: 208px;
+  font-size: 14px;
+  color: #000;
+  margin-bottom: 15px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-content: space-between;
+  align-content: space-between;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.iv-annotation__day {
+  margin-right: 10px;
+}
+.iv-annotation__day-comment {
+  width: 170px;
 }
 
 @font-face {
@@ -1256,4 +1353,75 @@ input:focus, select:focus, textarea:focus {
 }
 .menu__link:hover {
   border-bottom: 1px solid #674359;
+}
+
+.calendar-ovulation {
+  width: 720px;
+  border: 1px solid #e7e7e7;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: 20px;
+  background: #fffcfd url(../images/calendar-ovulation.png) no-repeat 495px 65px;
+}
+.calendar-ovulation__form {
+  width: 380px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: left;
+  justify-content: left;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-content: space-between;
+  align-content: space-between;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.calendar-ovulation__form .group--inline {
+  margin-right: 10px;
+  margin-top: -8px;
+}
+.calendar-ovulation__form .group--submit {
+  width: 380px;
+  margin-top: 15px;
+}
+.calendar-ovulation__result {
+  width: 678px;
+  background: url(../images/calendar-ovulation__result.png) no-repeat top center;
+  margin: 35px auto 0;
+  padding-top: 60px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-content: space-between;
+  align-content: space-between;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.calendar-ovulation__annotation {
+  width: 678px;
+  border-top: 1px solid #e7e7e7;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-content: space-between;
+  align-content: space-between;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-top: 25px;
 }

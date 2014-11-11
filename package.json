@@ -1,11 +1,11 @@
 {
-  "name": "Limon-Default-Template",
-  "version": "0.0.2",
-  "title": "Limon Default Template",
-  "description": "A template for a quick start.",
+  "name": "Mosmama.ru",
+  "version": "v2",
+  "title": "Mosmama.ru Project",
+  "description": "mosmama.ru",
   "repository": {
     "type": "git",
-    "url": "https://github.com/extiser/template.git"
+    "url": "https://github.com/extiser/mosmama.git"
   },
   "author": {
     "name": "extiser",
@@ -13,10 +13,10 @@
   },
   "copyright": "©extiser",
   "bugs": {
-    "url": "https://github.com/extiser/template/issues/",
+    "url": "https://github.com/extiser/mosmama/issues/",
     "email": "1sappho@gmail.com"
   },
-  "homepage": "https://github.com/extiser/template/",
+  "homepage": "https://github.com/extiser/mosmama/",
   "engines": {
     "node": ">= 0.10.0"
   },

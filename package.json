@@ -1,0 +1,50 @@
+{
+  "name": "Limon-Default-Template",
+  "version": "0.0.2",
+  "title": "Limon Default Template",
+  "description": "A template for a quick start.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/extiser/template.git"
+  },
+  "author": {
+    "name": "extiser",
+    "url": "https://github.com/extiser"
+  },
+  "copyright": "©extiser",
+  "bugs": {
+    "url": "https://github.com/extiser/template/issues/",
+    "email": "1sappho@gmail.com"
+  },
+  "homepage": "https://github.com/extiser/template/",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-compass": "^2.0.1",
+    "gulp-concat": "^2.4.1",
+    "gulp-connect": "^2.2.0",
+    "gulp-csscomb": "^3.0.3",
+    "gulp-imagemin": "^1.2.1",
+    "gulp-jade": "^0.9.0",
+    "gulp-livereload": "^2.1.1",
+    "gulp-minify-css": "^0.3.11",
+    "gulp-plumber": "^0.6.6",
+    "gulp-ruby-sass": "^0.7.1",
+    "gulp-uglify": "^1.0.1",
+    "gulp.spritesmith": "^1.4.0"
+  },
+  "scripts": {
+    "preinstall": "npm cache clear"
+  },
+  "browsers": {
+    "android": 4,
+    "chrome": 36,
+    "firefox": 31,
+    "ie": 10,
+    "ios": 6,
+    "opera": 12,
+    "safari": 6
+  }
+}

@@ -1,0 +1,36 @@
+.form-search {
+    &--friends {
+        position: absolute;
+        top: -7px;
+        right: 0;
+
+        width: 250px;
+    }
+}
+
+.friends-profiles {
+    @include flex(flex, space-between, flex-start, row, space-between, wrap);
+    &__item {
+        position: relative;
+
+        width: 430px;
+        margin-bottom: 15px;
+        padding: 15px;
+
+        border: 1px solid #ebe5dc;
+
+        @include border-radius(5px);
+        @include box-sizing;
+        @include flex(flex, space-between, flex-start, row, space-between, nowrap);
+        img {
+            @include border-radius(5px);
+        }
+        .icons {
+            &--del {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+            }
+        }
+    }
+}

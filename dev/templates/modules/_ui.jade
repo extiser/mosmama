@@ -1,0 +1,177 @@
+.breadcrumbs
+	a(href="#").breadcrumbs__link--first Главная
+	a(href="#").breadcrumbs__link Категория
+	span.breadcrumbs__active Статья
+// end breadcrumbs
+
+.pagination
+	a.pagination__prev(href="#") Предыдущая
+	span.pagination__page.pagination__page--active 1
+	- for (var i = 2; i < 7; ++i) {
+		a.pagination__page(href="#") i
+	- }
+	a.pagination__next(href="#") Следующая
+// end pagination
+
+.form-search
+	form
+		label.form-search__search-line--icons-search
+		input(type="text", placeholder="Введите запрос для поиска").form-search__search-line.form-search__search-line--gray
+		input(type="submit", value="Найти").form-search__search-button.form-search__search-button--gray
+// end form-search
+
+.form-search
+	form
+		input(type="text", placeholder="Поиск по сообществам").form-search__search-line.form-search__search-line--blue
+		input(type="submit", value="Найти").form-search__search-button.form-search__search-button--blue
+// end form-search community
+
+.add-form
+	form
+		.add-form__add-line
+			span.add-form__add-line__user-frame
+			img(src="images/temp/avatar.png")
+			span.add-form__add-line__user-frame__name Катька
+		label.add-form__add-button--icons-women
+		input(type="submit", value="").add-form__add-button.add-form__add-button--gray
+// end add-form
+
+form
+	select.select-form
+		option Москва
+// end select-form
+
+span.icons.icons--pink-cross
+span.icons.icons--gray-cross
+span.icons.icons--exit
+span.icons.icons--smile
+span.icons.icons--share
+// end icons
+
+span.meta-info.meta-info--comments 18 комментариев
+span.meta-info.meta-info--time 17 минут назад
+span.meta-info.meta-info--likes 789
+// end meta-info
+
+span.in-frame.in-frame--child-gray
+span.in-frame.in-frame--camera-pink
+span.in-frame.in-frame--pencil
+// end in-frame
+
+a(href="#").btn.btn--pink.btn--height45 Опубликовать
+a(href="#").btn.btn--pink.btn--height45 Сохранить
+a(href="#").btn.btn--pink.btn--height45.btn--long Далее
+
+a(href="#").btn.btn--white.btn--height38.btn--icons-letter Сообщение
+a(href="#").btn.btn--white.btn--height38.btn--icons-wifi Подписаться
+a(href="#").btn.btn--white.btn--height38.btn--icons-women Добавить в друзья
+a(href="#").btn.btn--pink.btn--height38 Написать в сообщество
+a(href="#").btn.btn--white.btn--height38.btn--icons-cogwheel Настройки профиля
+a(href="#").btn.btn--white.btn--height38.btn--icons-pencil Редактировать
+a(href="#").btn.btn--white.btn--height38.btn--icons-crimson-cross Удалить
+a(href="#").btn.btn--blue.btn--height38 Вступить в сообщество
+
+a(href="#").btn.btn--pink Новое сообщение
+a(href="#").btn.btn--pink Добавить альбом
+a(href="#").btn.btn--blue Вступить
+a(href="#").btn.btn--blue.btn Отправить
+a(href="#").btn.btn--white.btn--write Написать в сообщество
+a(href="#").btn.btn--white.btn--icons-green-check.btn--confirm Подтвердить
+a(href="#").btn.btn--white.btn--icons-women Добавить в друзья
+a(href="#").btn.btn--white.btn--icons-letter.btn--empty
+a(href="#").btn.btn--white.btn--cancel Отменить заявку
+a(href="#").btn.btn--pink Добавить запись
+// end buttons
+
+span.name.name--online.name--drop Макс Казанцев
+
+a(href="#").links.links--blue.links--like Мне нравится
+
+span.number 456
+
+a(href="#").links.links--blue.links--delete Удалить всю переписку
+
+a(href="#").links.links--pink.links--add Добавить еще ребенка
+
+a(href="#").links.links--blue.links--link16 Читать далее
+
+a(href="#").links.links--blue.links--diary Завести дневник
+
+a(href="#").links.links--blue Все дневники
+
+span.number 5258
+
+span.add.add--child Добавить ребенка
+span.add.add--photo Выбрать фотографию
+span.select-file.select-file--child Выбрать фото
+
+textarea.textbox
+
+.title Популярные сообщества
+label.input-line--icons-woman
+
+input.input-line(type="text", placeholder="Ваше имя")
+
+label.input-line--icons-letter-small
+
+input(type="email", placeholder="Эл. почта").input-line
+
+label.input-line--icons-lock
+
+input.input-line(type="password", placeholder="Пароль")
+
+label.label Укажите первый день последней менструации:
+
+.iv-calendar
+	.iv-calendar__month-title Январь
+	.iv-calendar__month-week
+		.iv-calendar__month-day.iv-calendar__month-day--name &#1055;&#1053;
+		.iv-calendar__month-day.iv-calendar__month-day--name &#1042;&#1058;
+		.iv-calendar__month-day.iv-calendar__month-day--name &#1057;&#1056;
+		.iv-calendar__month-day.iv-calendar__month-day--name &#1063;&#1058;
+		.iv-calendar__month-day.iv-calendar__month-day--name &#1055;&#1058;
+		.iv-calendar__month-day.iv-calendar__month-day--name &#1057;&#1041;
+		.iv-calendar__month-day.iv-calendar__month-day--name &#1042;&#1057;
+	.iv-calendar__month-week
+		.iv-calendar__month-day.iv-calendar__month-day--empty
+		.iv-calendar__month-day.iv-calendar__month-day--empty
+		.iv-calendar__month-day.iv-calendar__month-day--orange 01
+		.iv-calendar__month-day.iv-calendar__month-day--orange-light 02
+		.iv-calendar__month-day.iv-calendar__month-day--orange-light 03
+		.iv-calendar__month-day.iv-calendar__month-day--orange-light 04
+		.iv-calendar__month-day.iv-calendar__month-day--orange-light 05
+	.iv-calendar__month-week
+		.iv-calendar__month-day.iv-calendar__month-day--blue 06
+		.iv-calendar__month-day.iv-calendar__month-day--blue 07
+		.iv-calendar__month-day.iv-calendar__month-day--blue 08
+		.iv-calendar__month-day.iv-calendar__month-day--blue 09
+		.iv-calendar__month-day.iv-calendar__month-day--blue 10
+		.iv-calendar__month-day.iv-calendar__month-day--green 11
+		.iv-calendar__month-day.iv-calendar__month-day--green 12
+	.iv-calendar__month-week
+		.iv-calendar__month-day.iv-calendar__month-day--green 13
+		.iv-calendar__month-day.iv-calendar__month-day--green 14
+		.iv-calendar__month-day.iv-calendar__month-day--pink 15
+		.iv-calendar__month-day.iv-calendar__month-day--green 16
+		.iv-calendar__month-day.iv-calendar__month-day--green 17
+		.iv-calendar__month-day.iv-calendar__month-day--green 18
+		.iv-calendar__month-day.iv-calendar__month-day--green 19
+	.iv-calendar__month-week
+		.iv-calendar__month-day.iv-calendar__month-day--blue 20
+		.iv-calendar__month-day.iv-calendar__month-day--blue 21
+		.iv-calendar__month-day.iv-calendar__month-day--blue 22
+		.iv-calendar__month-day.iv-calendar__month-day--blue 23
+		.iv-calendar__month-day.iv-calendar__month-day--orange-light 24
+		.iv-calendar__month-day.iv-calendar__month-day--orange-light 25
+		.iv-calendar__month-day.iv-calendar__month-day--orange-light 26
+	.iv-calendar__month-week
+		.iv-calendar__month-day.iv-calendar__month-day--orange-light 27
+		.iv-calendar__month-day.iv-calendar__month-day--orange-light 28
+		.iv-calendar__month-day.iv-calendar__month-day--orange 29
+		.iv-calendar__month-day.iv-calendar__month-day--orange-light 30
+		.iv-calendar__month-day.iv-calendar__month-day--orange-light 31
+		.iv-calendar__month-day.iv-calendar__month-day--empty
+		.iv-calendar__month-day.iv-calendar__month-day--empty
+
+.iv-annotation
+	.iv-annotation__big-day.iv-calendar__month-day--orange День начала цикла

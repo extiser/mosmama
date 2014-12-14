@@ -1,0 +1,16 @@
+.about {
+	.wrapper {
+		&--about {
+			border-top: 1px solid #ededed;
+			background: #fbf9f7 url(../images/about.jpg) no-repeat 850px bottom;
+			padding-top: 45px;
+			padding-bottom: 25px;
+		}
+	}
+	p {
+		display: block;
+		width: 758px;
+		color: #818181;
+		margin-top: 22px;
+	}
+}

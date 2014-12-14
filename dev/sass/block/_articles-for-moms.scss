@@ -1,0 +1,39 @@
+.articles-for-moms {
+	width: 758px;
+}
+
+.moms-entries {
+	@include flex(flex, space-between, flex-start, row, space-between);
+	padding: 25px 0;
+	border-top: 2px dotted #e3e3e3;
+	&__img {
+		width: 240px;
+		height: 180px;
+		display: block;
+		@include border-radius(5px);
+	}
+	&__right {
+		width: 493px;
+		p {
+			margin-top: 10px;
+			margin-bottom: 20px;
+		}
+	}
+}
+
+.links {
+	&--moms-entries {
+		font-size: 22px;
+		line-height: 28px;
+	}
+}
+
+.meta {
+	@include flex(flex, space-between, flex-start, row, space-between);
+}
+
+.title {
+	&--articles-for-moms {
+		margin-bottom: 15px;
+	}
+}

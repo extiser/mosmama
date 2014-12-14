@@ -1,23 +1,77 @@
-@import "compass/reset";
-@import "compass/css3";
-@import "compass/utilities";
+// base config
+@import 'base/config';
 
-// Site configuration
-@import "include/config.scss";
+// icons sprite
+@import 'helpers/icons';
 
-// UI Interface
-@import "include/ui.scss";
+// UI
+@import 'components/ui';
 
-// Fonts
-@import "include/fonts.scss";
+// header
+@import 'partials/header';
 
+// logo
+@import 'block/logo';
 
-//index
-@import "include/header.scss";
-@import "include/main.scss";
+// menu
+@import 'block/menu';
 
-//block
-@import "include/menu.scss";
+// photos-wall
+@import 'block/photos-wall';
 
-//calendar-ovulation
-@import "include/calendar.scss";
+// speed-registration
+@import 'block/speed-registration';
+
+// new-diary-entries
+@import 'block/new-diary-entries';
+
+// popular-community
+@import 'block/popular-community';
+
+// advertise-full
+@import 'block/advertise';
+
+// articles-for-moms
+@import 'block/articles-for-moms';
+
+// community-entries
+@import 'block/community-entries';
+
+// about
+@import 'block/about';
+
+// footer
+@import 'partials/footer';
+
+// group
+@import 'components/group';
+
+// category-menu
+@import 'block/category-menu';
+
+// category-list
+@import 'block/category-list';
+
+// community-entries--sidebar
+@import 'block/community-entries--sidebar';
+
+// article
+@import 'block/article';
+
+// related-posts
+@import 'block/related-posts';
+
+// user-profile-header
+@import 'block/user-profile-header';
+
+// user-profile-wall
+@import 'block/user-profile-wall';
+
+// user-profile-dnevnik
+@import 'block/user-profile-dnevnik';
+
+// user-profile-friends
+@import 'block/user-profile-friends';
+
+// user-profile-friends
+@import 'block/user-profile-messages';

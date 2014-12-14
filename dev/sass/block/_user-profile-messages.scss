@@ -1,0 +1,11 @@
+.user-profile-wall-menu {
+	margin: 20px 0;
+	position: relative;
+	.btn {
+		&--pink {
+			position: absolute;
+			right: 0;
+			top: -5px;
+		}
+	}
+}

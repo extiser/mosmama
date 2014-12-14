@@ -1,0 +1,29 @@
+.wrapper
+	.new-diary-entries
+		.group.group--title
+			.title.new-diary-entries__title Новые записи в дневниках
+			.panel-diaries
+				a(href="#").links.links--blue.links--diary.panel-diaries__link--first Завести дневник
+				img(src="images/temp/slash.png").panel-diaries__slash
+				a(href="#").links.links--blue.panel-diaries__link Все дневники
+				span.number 5258
+		.group.group--entries
+			.entries
+				- for (var i = 0; i < 4; ++i) {
+					.entry
+						img(src="images/temp/entries-avatar.png").entry__avatar
+						a(href="#").entry__link.links.links--blue Можно ли кормить 3-х месячного ребенка молочной смесью и грудным молоком?
+				- }
+			.entries.entries--center
+				- for (var i = 0; i < 4; ++i) {
+					.entry
+						img(src="images/temp/entries-avatar.png").entry__avatar
+						a(href="#").entry__link.links.links--blue Можно ли кормить 3-х месячного ребенка молочной смесью и грудным молоком?
+				- }
+			.entries
+				- for (var i = 0; i < 4; ++i) {
+					.entry
+						img(src="images/temp/entries-avatar.png").entry__avatar
+						a(href="#").entry__link.links.links--blue Можно ли кормить 3-х месячного ребенка молочной смесью и грудным молоком?
+				- }
+			

@@ -1,0 +1,14 @@
+.advertise {
+	&--full {
+		@include border-radius(5px);
+		overflow: hidden;
+		text-align: center;
+		margin: 25px 0;
+	}
+	&--sidebar {
+		@extend .advertise--full;
+		margin-top: 60px;
+		//position: absolute;
+		//bottom: 0;
+	}
+}

@@ -14,7 +14,7 @@ var gulp = require('gulp'),
  
 // Gulp Uglify
 gulp.task('uglify', function(){
-	gulp.src('dev/scripts/*/*.js')
+	gulp.src('dev/scripts/**/*.js')
 	.pipe(plumber())	// контроль ошибок
     .pipe(uglify())
     .pipe(gulp.dest('production/scripts/'))
@@ -22,7 +22,7 @@ gulp.task('uglify', function(){
 
 // Gulp Jade
 gulp.task('jade', function() {
-  gulp.src('dev/templates/*.jade')
+  gulp.src('dev/templates/**/*.jade')
   	.pipe(plumber())	// контроль ошибок
     .pipe(jade({
         pretty: true
@@ -32,26 +32,27 @@ gulp.task('jade', function() {
 
 gulp.task('sprite', function() {
 	var spriteData =
-		gulp.src('dev/images/sprite/*.png')
+		gulp.src('dev/images/icons/*.png')
 			.pipe(spritesmith({
-				imgName: 'sprite.png',
-				cssName: '_sprite.scss',
+				imgName: 'icons.png',
+				cssName: '_icons.scss',
 				cssFormat: 'scss',
 				algorithm: 'binary-tree',
 				padding: 5,
-				cssVarMap: function(sprite) {
-					sprite.name = 's-' + sprite.name
+				cssVarMap: function(icon) {
+					icon.name = 's-' + icon.name;
+                    icon.image = '../images/' + icon.image;
 				}
 			}));
 		spriteData.img
     	.pipe(imagemin())
     .pipe(gulp.dest('production/images/'))
     //.pipe(gulp.dest('dev/images/'))
-	spriteData.css.pipe(gulp.dest('dev/sass/components'));
+	spriteData.css.pipe(gulp.dest('dev/sass/helpers'));
 });
 
 gulp.task('images', function() {
-	gulp.src('dev/images/*')
+	gulp.src('dev/images/**/*')
 	.pipe(imagemin({
 		progressive: true
 	}))
@@ -61,7 +62,7 @@ gulp.task('images', function() {
 
 // Gulp compass
 gulp.task('sass', function() {
-    return gulp.src('dev/sass/**/*')
+    return gulp.src('dev/sass/*.scss')
     .pipe(plumber())	// контроль ошибок
     .pipe(compass({
         config_file: 'config.rb',
@@ -74,7 +75,7 @@ gulp.task('sass', function() {
 });
 
 gulp.task('css', function() {
-	return gulp.src('dev/css/**/*')
+	return gulp.src('dev/css/*.css')
 	.pipe(plumber())	// контроль ошибок
 	.pipe(concat('style.css'))
 	.pipe(minifyCSS())
@@ -91,10 +92,13 @@ gulp.task('connect', function() {
 // Watch Task
 gulp.task('watch', function() {
 	livereload.listen();
-    gulp.watch('dev/templates/*/*.jade', ['jade']).on('change', livereload.changed);
-    gulp.watch('dev/images/sprite/*.png', ['sprite']).on('change', livereload.changed);
+    gulp.watch('dev/templates/**/*.jade', ['jade']).on('change', livereload.changed);
+    gulp.watch('dev/images/icons/*.png', ['sprite']).on('change', livereload.changed);
     gulp.watch('dev/images/*', ['images']).on('change', livereload.changed);
+    gulp.watch('dev/images/temp/*.png', ['images']).on('change', livereload.changed);
     gulp.watch('dev/sass/*/*.scss', ['sass']).on('change', livereload.changed);
+    gulp.watch('dev/css/*.css', ['css']).on('change', livereload.changed);
+    gulp.watch('dev/scripts/**/*.js', ['uglify']).on('change', livereload.changed);
 });
 
 // Bump project

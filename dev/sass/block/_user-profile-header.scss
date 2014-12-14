@@ -1,0 +1,236 @@
+.user-profile-header {
+    width: 880px;
+    padding: 20px;
+
+    border: 1px solid #ebe5dc;
+    background: #fcf9f7;
+
+    @include border-radius(5px);
+    @include box-sizing;
+}
+
+.avatar {
+    position: relative;
+
+    width: 169px;
+    height: 169px;
+
+    border: 2px solid #fff;
+
+    @include border-radius(5px);
+    a {
+        position: absolute;
+        right: 8px;
+        bottom: 8px;
+    }
+}
+
+.user-profile {
+    width: 411px;
+    h1 {
+        font-family: Arial;
+        font-size: 30px;
+
+        text-transform: none;
+    }
+    &__place {
+        font-size: 12px;
+
+        margin: 15px 0;
+        padding-left: 12px;
+
+        color: #767676;
+
+        @include sprite($s-place);
+    }
+    &__status {
+        margin-top: 15px;
+        span {
+            font-size: 13px;
+            font-style: italic;
+
+            display: inline-block;
+
+            width: 370px;
+            margin-top: -7px;
+            margin-left: 5px;
+
+            color: #333;
+        }
+    }
+    &__config {
+        margin-top: 25px;
+    }
+}
+
+.child {
+    width: 210px;
+
+    @include flex(flex, space-between, flex-start, row, space-between, nowrap);
+    &__item {
+        width: 70px;
+        img {
+            display: block;
+
+            margin: auto;
+            margin-bottom: 7px;
+        }
+    }
+    &__info {
+        font-size: 12px;
+
+        display: block;
+
+        margin-bottom: 5px;
+
+        text-align: center;
+        &--name {
+            color: #87496e;
+        }
+        &--year {
+            color: #8e8982;
+        }
+    }
+}
+
+.pregnant {
+    width: 169px;
+    margin-top: 15px;
+    padding: 6px;
+
+    @include box-sizing;
+    @include border-radius(7px);
+    @include box-shadow(0 3px 8px #dcdad8);
+    &__time {
+        font-size: 12px;
+        font-style: italic;
+
+        position: relative;
+        left: 19px;
+
+        color: #7c5f70;
+        border-bottom: 1px solid #dfcbd5;
+        &:hover {
+            border-color: #7c5f70;
+        }
+        &:before {
+            position: absolute;
+            left: -19px;
+
+            display: block;
+
+            content: '';
+
+            border: none;
+
+            @include sprite($s-pregnant__time);
+        }
+    }
+    &__line {
+        position: relative;
+
+        width: 158px;
+        height: 6px;
+        margin-top: 7px;
+
+        border-top: 2px solid #d2cbbe;
+        background: #e7dfd1;
+
+        @include box-sizing;
+        @include border-radius(5px);
+        .line {
+            position: absolute;
+            top: -1px;
+            left: 1px;
+
+            width: 158px;
+            height: 4px;
+
+            border-top: 1px solid #79b966;
+
+            @include background-image(linear-gradient(#5caa44, #559840));
+            @include border-radius(5px);
+            &--week-3 {
+                width: 158px / 40 * 4;
+            }
+            &--week-6 {
+                width: 158px / 40 * 8;
+            }
+            &--week-9 {
+                width: 158px / 40 * 12;
+            }
+            &--week-12 {
+                width: 158px / 40 * 16;
+            }
+            &--week-15 {
+                width: 158px / 40 * 20;
+            }
+            &--week-18 {
+                width: 158px / 40 * 24;
+            }
+            &--week-21 {
+                width: 158px / 40 * 28;
+            }
+            &--week-24 {
+                width: 158px / 40 * 32;
+            }
+            &--week-27 {
+                width: 158px / 40 * 36;
+            }
+            &--week-30 {
+                width: 158px / 40 * 40;
+            }
+        }
+    }
+}
+
+.user-menu {
+    width: 641px;
+    margin-top: 15px;
+    &__list-items {
+        @include flex(flex, space-between, center, row, space-between, nowrap);
+    }
+    &__item {
+        position: relative;
+        .count {
+            font-size: 14px;
+
+            position: absolute;
+            top: -10px;
+            right: -20px;
+
+            display: block;
+
+            width: 20px;
+            padding: 3px 0;
+
+            text-align: center;
+
+            color: #fff;
+            background: #5caa44;
+
+            @include border-radius(50%);
+        }
+        &--active {
+            a {
+                font-weight: bold;
+
+                border: none;
+            }
+            &:after {
+                position: absolute;
+                right: 0;
+                bottom: -29px;
+                left: 0;
+
+                display: block;
+
+                margin: auto;
+
+                content: '';
+
+                @include sprite($s-user-menu__item--active);
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+.menu {
+    @include flex(flex, space-between, flex-start, row);
+    &__link {
+        font-size: 14px;
+        font-weight: bold;
+
+        text-transform: uppercase;
+
+        color: #674359;
+        border-bottom: 1px solid #cdbec2;
+        &:hover {
+            border-bottom: 1px solid #674359;
+        }
+    }
+    &--footer {
+        width: 630px;
+    }
+}

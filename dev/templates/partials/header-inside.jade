@@ -1,0 +1,25 @@
+.header
+	.wrapper.wrapper--gray
+		.header__top
+			a(href='#').logo
+			.group.group--search-menu
+				.form-search.form-search--header
+					form
+						label.form-search__search-line--icons-search
+						input(type="text", placeholder="Введите запрос для поиска").form-search__search-line.form-search__search-line--gray
+						input(type="submit", value="Найти").form-search__search-button.form-search__search-button--gray
+				// end form-search
+				.menu
+					a.menu__link(href="#") Главная
+					a.menu__link(href="#") Общение
+					a.menu__link(href="#") Дневники
+					a.menu__link(href="#") Поиск подруг
+					a.menu__link(href="#") Полезные статьи
+			// end group--search-menu
+			.registration-enter
+				img(src="images/temp/avatar-registration-enter.png").registration-enter__avatar
+				.group.group--links
+					a(href="#").links.links--blue.registration-enter__link--enter Войти
+					a(href="#").links.links--blue.registration-enter__link--registration Регистрация
+					span.registration-enter__link-social через
+						img(src="images/temp/registration-enter-link-social.png")

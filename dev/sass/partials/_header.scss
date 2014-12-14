@@ -1,0 +1,90 @@
+.header {
+    .wrapper {
+        &--pink {
+            border-bottom: 1px solid #f3e8e1;
+            background: #f9f3ef;
+        }
+        &--gray {
+            border-bottom: 1px solid #c7c7c7;
+            background: #fbfbfb;
+        }
+    }
+    .header__top {
+        padding: 15px 0 20px;
+
+        @include flex(flex, space-between, flex-start, row);
+        .form-search {
+            &--header {
+                margin: 0 0 10px 0;
+
+                @include box-shadow(0 1px 0 #fff);
+            }
+        }
+        .registration-enter {
+            width: 205px;
+            margin: 10px 0;
+
+            @include flex(flex, space-between, center, row, center, nowrap);
+            .group {
+                &--links {
+                    width: 151px;
+                }
+            }
+            &__avatar {
+                width: 34px;
+                height: 34px;
+                @include opacity(0.5);
+            }
+            &__link {
+                &--registration {
+                    float: right;
+                }
+            }
+            &__link-social {
+                font-style: italic;
+
+                display: inline-block;
+
+                margin: 10px 0 0 0;
+
+                color: #989898;
+            }
+        }
+        &--fixed {
+            position: fixed;
+            z-index: 999;
+            top: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+
+            width: 1200px;
+            height: 48px;
+            padding: 0 35px;
+
+            background: #fff;
+
+            @include box-sizing;
+            @include box-shadow(0 1px 8px #c3c0bd);
+            @include flex(flex, space-between, center, row);
+
+            .form-search {
+                &--header {
+                    display: none;
+                    form {}
+                }
+            }
+            .logo {
+                @include sprite($s-logo-header--fixed);
+            }
+            .registration-enter {
+                &__avatar {
+                    @include opacity(1);
+                }
+                &__link-social {
+                    display: none;
+                }
+            }
+        }
+    }
+}

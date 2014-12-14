@@ -1,0 +1,39 @@
+.speed-registration {
+    width: 336px;
+    margin: 0 0 20px 0;
+    padding: 30px 20px 25px;
+
+    border: 1px solid #efe9e6;
+    background-color: #fff;
+
+    @include box-sizing;
+    @include border-radius(5px);
+    @include box-shadow(#e6e1dd 0px 1px 1px 1px);
+    &__title {
+        font-size: 13px;
+        line-height: 16px;
+
+        display: block;
+
+        width: 230px;
+        margin: 0 auto 15px;
+
+        text-align: center;
+
+        color: #606060;
+        &--top {
+            font-family: 'Roboto Condensed Bold';
+            font-size: 21px;
+
+            width: 100%;
+            margin: 0 0 10px 0;
+
+            text-transform: uppercase;
+
+            color: #c94073;
+        }
+    }
+    &__input-line {
+        margin: 0 0 15px 0;
+    }
+}

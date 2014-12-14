@@ -1,0 +1,37 @@
+.user-profile-wall
+	.user-profile-wall-menu
+		ul.user-profile-wall-menu__list-items
+			li.user-profile-wall-menu__item.user-profile-wall-menu__item--active
+				a(href="#").links.links--blue Все сообщения
+			li.user-profile-wall-menu__item
+				a(href="#").links.links--blue Черновики
+		a(href="#").btn.btn--pink Новое сообщение
+	// end user-profile-wall-menu
+
+	.user-profile-wall-items
+		- for (var i = 0; i < 7; ++i) {
+		.user-profile-wall-items__item
+			.small-profile
+				img(src="images/temp/user-profile-avatar.png")
+				a(href="#").name.name--drop.name--online.name--small-profile Макс Казанцев
+				.meta-info.meta-info--time.meta-info--small-profile 17 минут назад
+
+			.user-profile-wall-items__content
+				.alert.alert--new-message
+					p Дoбpый день! Cтаpтовaл новый раздeл нaшeгo пoрталa. В чeсть oтkpытия cайта пpeдлагaeм вам составить индивидyальную диетy.
+
+			a(href="#").icons.icons--pink-cross
+		- }
+		// end user-profile-wall
+
+		.user-profile-wall-items__item
+			.small-profile
+				img(src="images/temp/user-profile-avatar.png")
+				a(href="#").name.name--drop.name--online.name--small-profile Макс Казанцев
+				.meta-info.meta-info--time.meta-info--small-profile 17 минут назад
+
+			.user-profile-wall-items__content
+				.alert
+					p Дoбpый день! Cтаpтовaл новый раздeл нaшeгo пoрталa. В чeсть oтkpытия cайта пpeдлагaeм вам составить индивидyальную диетy.
+
+			a(href="#").icons.icons--pink-cross

@@ -1,0 +1,14 @@
+.popular-community
+	.wrapper.wrapper--blue
+		.group.group--title
+			.title Популярные сообщества
+			.panel
+				a(href="#").links.links--blue Все сообщества
+				span.number.number--white 456
+		.group.group--entries
+			- for (var i = 0; i < 8; ++i) {
+				.popular-community__item
+					img(src="images/temp/popular-community__img.png").popular-community__img
+					a(href="#").links.links--blue Беременность и роды
+			- }
+		

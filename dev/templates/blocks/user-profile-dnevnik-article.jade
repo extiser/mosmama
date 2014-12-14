@@ -1,0 +1,24 @@
+.user-profile-wall
+	.user-profile-wall-menu
+		ul.user-profile-wall-menu__list-items
+			li.user-profile-wall-menu__item
+				a(href="#").links.links--blue Вернуться назад
+	// end user-profile-wall-menu
+
+	.user-profile-wall-items
+		include article.jade
+		// end article
+		
+		.group.group--small-profile-buttons
+			.small-profile
+				img(src="images/temp/user-profile-avatar.png")
+				a(href="#").name.name--drop.name--online.name--small-profile Макс Казанцев
+				.meta-info.meta-info--time.meta-info--small-profile 17 минут назад
+			.group.group--buttons-dnevnik
+				a(href="#").btn.btn--white.btn--height38.btn--icons-pencil Редактировать
+				a(href="#").btn.btn--white.btn--height38.btn--icons-crimson-cross Удалить
+		
+
+		
+
+		include pagination.jade

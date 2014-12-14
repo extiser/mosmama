@@ -1,0 +1,12 @@
+.photos-wall{
+	width: 757px;
+	@include flex(flex, space-between, flex-start, row, space-between, wrap);
+	&__item{
+		width: 79px;
+		height: 79px;
+		margin: 0 0 5px 0;
+		&--long{
+			width: 164px;
+		}
+	}
+}

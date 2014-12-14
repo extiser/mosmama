@@ -1,0 +1,36 @@
+.community-entries-list {
+    width: 335px;
+    margin-top: 15px;
+
+    border: 2px dotted #ebebeb;
+    background: #fffdfa;
+
+    @include box-sizing;
+    @include border-radius(5px);
+    &__item {
+        position: relative;
+
+        padding: 19px 19px 19px 52px;
+
+        border-bottom: 2px dotted #ebebeb;
+        &:last-child {
+            border: 0;
+        }
+        &:before {
+            position: absolute;
+            left: 16px;
+
+            display: block;
+
+            content: '';
+
+            @include sprite($s-community-entries-list__item);
+        }
+    }
+}
+
+.meta {
+    &--community-entries {
+        margin-top: 8px;
+    }
+}

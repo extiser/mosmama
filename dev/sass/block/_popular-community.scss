@@ -1,0 +1,20 @@
+.popular-community {
+	.wrapper {
+		&--blue {
+			padding-top: 28px;
+			padding-bottom: 27px;
+			border: 1px solid #cbe2ee;
+			background: #e8f4fa url(../images/wrapper--blue.png) repeat-x bottom center;
+		}
+	}
+	&__item {
+		width: 104px;
+		text-align: center;
+		margin-top: 25px;
+	}
+	&__img {
+		border: 3px solid #cfe4ef;
+		@include border-radius(5px);
+		margin-bottom: 10px;
+	}
+}

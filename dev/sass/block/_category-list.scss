@@ -1,0 +1,13 @@
+.category-list {
+    h1 {
+        margin-bottom: 15px;
+    }
+    &__item {
+        padding-right: 20px;
+        img {
+            margin-bottom: 8px;
+
+            @include border-radius(5px);
+        }
+    }
+}

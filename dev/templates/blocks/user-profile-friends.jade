@@ -1,0 +1,34 @@
+.user-profile-wall
+	.user-profile-wall-menu
+		ul.user-profile-wall-menu__list-items
+			li.user-profile-wall-menu__item.user-profile-wall-menu__item--active
+				a(href="#").links.links--blue Все друзья
+			li.user-profile-wall-menu__item
+				a(href="#").links.links--blue Подписки
+			li.user-profile-wall-menu__item
+				a(href="#").links.links--blue Мои подписчики
+			li.user-profile-wall-menu__item
+				a(href="#").links.links--blue На рассмотрении
+		.form-search.form-search--friends
+			form
+				input(type="search", placeholder="Поиск по друзьям").form-search__search-line.form-search__search-line--blue
+				input(type="submit", value="Найти").form-search__search-button.form-search__search-button--blue
+	// end user-profile-wall-menu
+
+	.user-profile-wall-items
+		.friends-profiles
+			- for (var i = 0; i < 24; ++i) {
+			.friends-profiles__item
+				.group.group--profiles-avatar
+					img(src="images/temp/friends-profiles-avatar.png")
+				.group.group--profiles-items
+					a(href="#").name.name--online-big.links.links--blue Нюша Шурочкина
+					.user-profile
+						.user-profile__place Москва
+					a(href="#").btn.btn--white.btn--height38.btn--icons-letter Сообщение
+				a.icons.icons--pink-cross.icons--del
+			- }
+		// end friends-profiles
+		
+		include pagination.jade
+		// end pagination

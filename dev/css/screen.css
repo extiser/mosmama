@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:700&subset=cyrillic-ext,latin);
 html,
 body,
 div,
@@ -151,14 +152,18 @@ summary {
 	display: block;
 }
 
-@font-face {
-	font-family: "Roboto Condensed Bold";
-	font-weight: normal;
-	font-style: normal;
+/*@font-face {
+    font-family: 'RobotoCondensedBold';
+    src: url('../fonts/robotocondensed-bold-webfont.eot');
+    src: url('../fonts/robotocondensed-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/robotocondensed-bold-webfont.woff2') format('woff2'),
+         url('../fonts/robotocondensed-bold-webfont.woff') format('woff'),
+         url('../fonts/robotocondensed-bold-webfont.ttf') format('truetype'),
+         url('../fonts/robotocondensed-bold-webfont.svg#roboto_condensedbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
-	src: url("../fonts/robotocondensed-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/robotocondensed-bold-webfont.woff2") format("woff2"), url("../fonts/robotocondensed-bold-webfont.woff") format("woff"), url("../fonts/robotocondensed-bold-webfont.ttf") format("truetype");
-	src: url("../fonts/robotocondensed-bold-webfont.eot");
-}
+}*/
 input:focus,
 select:focus,
 textarea:focus {
@@ -1375,7 +1380,7 @@ h1,
 
 	color: #3e526b;
 
-	font-family: "Roboto Condensed Bold";
+	font-family: "Roboto Condensed", sans-serif;
 	font-size: 18px;
 }
 .title--word-color,
@@ -1811,7 +1816,7 @@ h1,
 
 	color: #c94073;
 
-	font-family: "Roboto Condensed Bold";
+	font-family: "Roboto Condensed", sans-serif;
 	font-size: 21px;
 }
 .speed-registration__input-line {
@@ -2958,4 +2963,17 @@ h1,
 	position: absolute;
 	top: -5px;
 	right: 0;
+}
+
+html > body * > .input-line--icons-woman:before,
+.input-line x:-moz-any-link:before {
+	top: -12px;
+}
+html > body * > .input-line--icons-letter-small:before,
+.input-line x:-moz-any-link:before {
+	top: -9px;
+}
+html > body * > .input-line--icons-lock:before,
+.input-line x:-moz-any-link:before {
+	top: -10px;
 }

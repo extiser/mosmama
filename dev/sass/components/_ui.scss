@@ -105,6 +105,9 @@
     &--woman {
         @include sprite($s-woman);
     }
+    &--add-album-foto {
+        @include sprite($s-add-album-foto);
+    }
 }
 
 .btn {
@@ -884,6 +887,32 @@
         }
     }
 }
+.select-foto-in-album {
+    position: relative;
+
+    display: inline-block;
+
+    width: 210px;
+    height: 160px;
+
+    vertical-align: middle;
+
+    border: 1px solid #dae6f1;
+    background-color: #f5f9fb;
+
+    @include border-radius(5px);
+    @include box-sizing;
+    &:before {
+        position: absolute;
+
+        margin-top: 15px;
+        margin-left: 35px;
+
+        content: '';
+
+        @extend .icons--add-album-foto;
+    }
+}
 .textbox {
     width: 487px;
     height: 161px;
@@ -894,6 +923,27 @@
 
     @include box-sizing;
     @include border-radius(5px);
+    &--comment {
+        font-size: 12px;
+        font-style: italic;
+
+        position: relative;
+
+        width: 770px;
+        height: 90px;
+        padding: 10px;
+
+        color: #bab6b6;
+        border: 1px solid #dae6f1;
+        background: #fff;
+
+        @include border-radius(5px);
+        @include box-shadow(inset #d9d9d9 0 3px 3px);
+    }
+    &--input {
+        width: 100%;
+        height: 56px;
+    }
 }
 
 .input-line {
@@ -1077,6 +1127,9 @@
             bottom: 2px;
             left: 55px;
         }
+    }
+    &--comment {
+        width: 45px;
     }
 }
 

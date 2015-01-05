@@ -66,4 +66,31 @@
 	&--profiles-items {
 		width: 280px;
 	}
+	&--profile-form {
+		@include flex(flex, space-between, flex-start, row, space-between, nowrap);
+	}
+	&--icons-submit {
+		width: 770px;
+		@include flex(flex, space-between, flex-start, row, space-between, nowrap);	
+		margin-left: 55px;
+		margin-top: 20px;
+	}
+	&--avatar {
+		width: 45px;
+		img {
+			@include border-radius(5px);
+		}
+	}
+	&--answer-meta {
+		width: 820px;
+	}
+	&--name-time, &--answer-spam {
+		@include flex(flex, space-between, flex-start, row, space-between, nowrap);	
+	}
+	&--name-time {
+		margin-bottom: 10px;
+	}
+	&--answer-spam {
+		margin-top: 5px;
+	}
 }

@@ -1,0 +1,30 @@
+.comments
+	.title Комментарии пользователей
+	.comments-form
+		.comments-form__title Оставьте свой комментарий
+		.group.group--profile-form
+			.small-profile.small-profile--comment
+				img(src="images/temp/user-profile-avatar.png")
+			textarea.textbox.textbox--comment Ваш комментарий...
+		.group.group--icons-submit
+			.comments-form__icons
+				a(href="#").icons.icons--smile
+				a(href="#").icons.icons--photo-icon
+				a(href="#").icons.icons--share
+			input(type="submit", value="Отправить").btn.btn--blue
+	// end comments-form
+
+	.comments-answers
+		- for (var i = 0; i < 10; ++i) {
+		.comments-answers__item
+			.group.group--avatar
+				img(src="images/temp/user-profile-avatar.png")
+			.group.group--answer-meta
+				.group.group--name-time
+					a(href="#").name.name--drop.name--online.name--small-profile Макс Казанцев
+					.meta-info.meta-info--time.meta-info--small-profile 17 минут назад
+				p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+				.group.group--answer-spam
+					a(href="#").links.links--blue Ответить
+					a(href="#").links.links--blue Это спам
+		- }

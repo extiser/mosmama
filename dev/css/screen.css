@@ -214,6 +214,10 @@ p,
 	line-height: 22px;
 }
 
+strong {
+	font-weight: bold;
+}
+
 .container {
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
@@ -279,7 +283,7 @@ The provided mixins are intended to be used with the array-like variables
 	height: 11px;
 
 	background-image: url(../images/icons.png);
-	background-position: -198px -173px;
+	background-position: -183px -95px;
 }
 .icons--right-arrow,
 .breadcrumbs__link:before,
@@ -288,28 +292,28 @@ The provided mixins are intended to be used with the array-like variables
 	height: 7px;
 
 	background-image: url(../images/icons.png);
-	background-position: -234px -107px;
+	background-position: -183px -111px;
 }
 .icons--pink-cross {
 	width: 12px;
 	height: 12px;
 
 	background-image: url(../images/icons.png);
-	background-position: -94px -173px;
+	background-position: -323px -146px;
 }
 .icons--gray-cross {
 	width: 12px;
 	height: 12px;
 
 	background-image: url(../images/icons.png);
-	background-position: -145px -173px;
+	background-position: -323px -166px;
 }
 .icons--exit {
 	width: 15px;
 	height: 12px;
 
 	background-image: url(../images/icons.png);
-	background-position: -162px -173px;
+	background-position: -292px -185px;
 }
 .icons--comments,
 .meta-info--comments:before {
@@ -317,7 +321,7 @@ The provided mixins are intended to be used with the array-like variables
 	height: 12px;
 
 	background-image: url(../images/icons.png);
-	background-position: -128px -173px;
+	background-position: -306px -166px;
 }
 .icons--time,
 .meta-info--time:before {
@@ -325,7 +329,7 @@ The provided mixins are intended to be used with the array-like variables
 	height: 12px;
 
 	background-image: url(../images/icons.png);
-	background-position: -77px -173px;
+	background-position: -289px -166px;
 }
 .icons--gray-like,
 .meta-info--likes:before {
@@ -333,14 +337,14 @@ The provided mixins are intended to be used with the array-like variables
 	height: 11px;
 
 	background-image: url(../images/icons.png);
-	background-position: -215px -173px;
+	background-position: -166px -95px;
 }
 .icons--delta-blue {
 	width: 6px;
 	height: 5px;
 
 	background-image: url(../images/icons.png);
-	background-position: -208px -127px;
+	background-position: -207px -111px;
 }
 .icons--blue-cross,
 .links--delete:before {
@@ -348,7 +352,7 @@ The provided mixins are intended to be used with the array-like variables
 	height: 12px;
 
 	background-image: url(../images/icons.png);
-	background-position: -43px -173px;
+	background-position: -262px -185px;
 }
 .icons--pink-plus,
 .links--add:before {
@@ -356,7 +360,7 @@ The provided mixins are intended to be used with the array-like variables
 	height: 12px;
 
 	background-image: url(../images/icons.png);
-	background-position: -111px -173px;
+	background-position: -312px -185px;
 }
 .icons--online,
 .name--online:before,
@@ -365,7 +369,7 @@ The provided mixins are intended to be used with the array-like variables
 	height: 12px;
 
 	background-image: url(../images/icons.png);
-	background-position: -60px -173px;
+	background-position: -245px -185px;
 }
 .icons--delta-pink,
 .name--drop:after {
@@ -373,7 +377,7 @@ The provided mixins are intended to be used with the array-like variables
 	height: 5px;
 
 	background-image: url(../images/icons.png);
-	background-position: -230px -127px;
+	background-position: -229px -111px;
 }
 .icons--crimson-cross,
 .btn--icons-crimson-cross:before {
@@ -381,7 +385,7 @@ The provided mixins are intended to be used with the array-like variables
 	height: 11px;
 
 	background-image: url(../images/icons.png);
-	background-position: -232px -173px;
+	background-position: -150px -95px;
 }
 .icons--green-check,
 .btn--icons-green-check:before {
@@ -389,7 +393,7 @@ The provided mixins are intended to be used with the array-like variables
 	height: 10px;
 
 	background-image: url(../images/icons.png);
-	background-position: -36px -192px;
+	background-position: -200px -95px;
 }
 .icons--letter-small,
 .input-line--icons-letter-small:before {
@@ -397,7 +401,7 @@ The provided mixins are intended to be used with the array-like variables
 	height: 10px;
 
 	background-image: url(../images/icons.png);
-	background-position: -17px -192px;
+	background-position: -217px -95px;
 }
 .icons--lock,
 .input-line--icons-lock:before {
@@ -405,7 +409,7 @@ The provided mixins are intended to be used with the array-like variables
 	height: 12px;
 
 	background-image: url(../images/icons.png);
-	background-position: -182px -173px;
+	background-position: -325px -44px;
 }
 .icons--diary,
 .links--diary:before {
@@ -413,28 +417,28 @@ The provided mixins are intended to be used with the array-like variables
 	height: 15px;
 
 	background-image: url(../images/icons.png);
-	background-position: -166px -141px;
+	background-position: -313px -125px;
 }
 .icons--smile {
 	width: 20px;
 	height: 20px;
 
 	background-image: url(../images/icons.png);
-	background-position: -124px -68px;
+	background-position: -274px -76px;
 }
 .icons--photo-icon {
 	width: 22px;
 	height: 17px;
 
 	background-image: url(../images/icons.png);
-	background-position: -32px -141px;
+	background-position: -308px -102px;
 }
 .icons--share {
 	width: 17px;
 	height: 18px;
 
 	background-image: url(../images/icons.png);
-	background-position: -212px -68px;
+	background-position: -299px -76px;
 }
 .icons--search,
 .form-search__search-line--icons-search:before {
@@ -442,7 +446,7 @@ The provided mixins are intended to be used with the array-like variables
 	height: 16px;
 
 	background-image: url(../images/icons.png);
-	background-position: -59px -141px;
+	background-position: -266px -125px;
 }
 .icons--child-gray,
 .in-frame--child-gray:before {
@@ -450,7 +454,7 @@ The provided mixins are intended to be used with the array-like variables
 	height: 41px;
 
 	background-image: url(../images/icons.png);
-	background-position: 0 -95px;
+	background-position: -154px -136px;
 }
 .icons--camera-pink,
 .in-frame--camera-pink:before {
@@ -458,7 +462,7 @@ The provided mixins are intended to be used with the array-like variables
 	height: 15px;
 
 	background-image: url(../images/icons.png);
-	background-position: -204px -141px;
+	background-position: -245px -146px;
 }
 .icons--pencil,
 .btn--icons-pencil:before,
@@ -467,7 +471,7 @@ The provided mixins are intended to be used with the array-like variables
 	height: 15px;
 
 	background-image: url(../images/icons.png);
-	background-position: -185px -141px;
+	background-position: -286px -146px;
 }
 .icons--child-big,
 .select-file--child:before {
@@ -475,7 +479,7 @@ The provided mixins are intended to be used with the array-like variables
 	height: 90px;
 
 	background-image: url(../images/icons.png);
-	background-position: 0 0;
+	background-position: -150px 0;
 }
 .icons--child-blue,
 .add--child:before {
@@ -483,7 +487,7 @@ The provided mixins are intended to be used with the array-like variables
 	height: 27px;
 
 	background-image: url(../images/icons.png);
-	background-position: -186px -95px;
+	background-position: -245px -44px;
 }
 .icons--women,
 .btn--icons-women:before,
@@ -492,7 +496,7 @@ The provided mixins are intended to be used with the array-like variables
 	height: 16px;
 
 	background-image: url(../images/icons.png);
-	background-position: -120px -141px;
+	background-position: -287px -125px;
 }
 .icons--like-pink,
 .links--like:before {
@@ -500,7 +504,7 @@ The provided mixins are intended to be used with the array-like variables
 	height: 18px;
 
 	background-image: url(../images/icons.png);
-	background-position: -149px -68px;
+	background-position: -285px -102px;
 }
 .icons--camera-blue,
 .add--photo:before {
@@ -508,7 +512,7 @@ The provided mixins are intended to be used with the array-like variables
 	height: 21px;
 
 	background-image: url(../images/icons.png);
-	background-position: -95px -68px;
+	background-position: -245px -76px;
 }
 .icons--letter,
 .btn--icons-letter:before {
@@ -516,7 +520,7 @@ The provided mixins are intended to be used with the array-like variables
 	height: 14px;
 
 	background-image: url(../images/icons.png);
-	background-position: -18px -173px;
+	background-position: -245px -166px;
 }
 .icons--cogwheel,
 .btn--icons-cogwheel:before {
@@ -524,7 +528,7 @@ The provided mixins are intended to be used with the array-like variables
 	height: 16px;
 
 	background-image: url(../images/icons.png);
-	background-position: -80px -141px;
+	background-position: -245px -125px;
 }
 .icons--wifi,
 .btn--icons-wifi:before {
@@ -532,14 +536,14 @@ The provided mixins are intended to be used with the array-like variables
 	height: 14px;
 
 	background-image: url(../images/icons.png);
-	background-position: 0 -173px;
+	background-position: -305px -146px;
 }
 .icons--smile {
 	width: 20px;
 	height: 20px;
 
 	background-image: url(../images/icons.png);
-	background-position: -124px -68px;
+	background-position: -274px -76px;
 }
 .icons--woman,
 .input-line--icons-woman:before {
@@ -547,7 +551,15 @@ The provided mixins are intended to be used with the array-like variables
 	height: 16px;
 
 	background-image: url(../images/icons.png);
-	background-position: -101px -141px;
+	background-position: -321px -76px;
+}
+.icons--add-album-foto,
+.select-foto-in-album:before {
+	width: 145px;
+	height: 131px;
+
+	background-image: url(../images/icons.png);
+	background-position: 0 0;
 }
 
 .btn {
@@ -1309,6 +1321,34 @@ The provided mixins are intended to be used with the array-like variables
 	content: "";
 }
 
+.select-foto-in-album {
+	position: relative;
+
+	display: inline-block;
+
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	width: 210px;
+	height: 160px;
+
+	vertical-align: middle;
+
+	border: 1px solid #dae6f1;
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+	        border-radius: 5px;
+	background-color: #f5f9fb;
+}
+.select-foto-in-album:before {
+	position: absolute;
+
+	margin-top: 15px;
+	margin-left: 35px;
+
+	content: "";
+}
+
 .textbox {
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
@@ -1322,6 +1362,30 @@ The provided mixins are intended to be used with the array-like variables
 	-webkit-border-radius: 5px;
 	   -moz-border-radius: 5px;
 	        border-radius: 5px;
+}
+.textbox--comment {
+	position: relative;
+
+	width: 770px;
+	height: 90px;
+	padding: 10px;
+
+	color: #bab6b6;
+	border: 1px solid #dae6f1;
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+	        border-radius: 5px;
+	background: #fff;
+	-webkit-box-shadow: inset #d9d9d9 0 3px 3px;
+	   -moz-box-shadow: inset #d9d9d9 0 3px 3px;
+	        box-shadow: inset #d9d9d9 0 3px 3px;
+
+	font-size: 12px;
+	font-style: italic;
+}
+.textbox--input {
+	width: 100%;
+	height: 56px;
 }
 
 .input-line {
@@ -1535,6 +1599,9 @@ h1,
 	bottom: 2px;
 	left: 55px;
 }
+.small-profile--comment {
+	width: 45px;
+}
 
 .alert {
 	position: relative;
@@ -1566,7 +1633,7 @@ h1,
 	height: 10px;
 
 	background-image: url(../images/icons.png);
-	background-position: -36px -192px;
+	background-position: -200px -95px;
 }
 .alert--denied {
 	padding-left: 30px;
@@ -1581,7 +1648,7 @@ h1,
 	height: 10px;
 
 	background-image: url(../images/icons.png);
-	background-position: -53px -192px;
+	background-position: -167px -111px;
 }
 .alert--new-message {
 	background: #eef6ec;
@@ -1702,7 +1769,7 @@ h1,
 	height: 39px;
 
 	background-image: url(../images/icons.png);
-	background-position: -46px -95px;
+	background-position: -245px 0;
 }
 .header .header__top--fixed .registration-enter__avatar {
 	opacity: 1;
@@ -1718,7 +1785,7 @@ h1,
 	height: 63px;
 
 	background-image: url(../images/icons.png);
-	background-position: -95px 0;
+	background-position: 0 -136px;
 }
 
 .menu {
@@ -2020,7 +2087,7 @@ h1,
 	content: "";
 
 	background-image: url(../images/icons.png);
-	background-position: 0 -141px;
+	background-position: -277px -44px;
 }
 
 .meta--community-entries {
@@ -2270,6 +2337,73 @@ h1,
 .group--profiles-items {
 	width: 280px;
 }
+.group--profile-form {
+	display: -webkit-flex;
+	display:         flex;
+	        flex-direction: row;
+
+	-webkit-align-content: space-between;
+	        align-content: space-between;
+	-webkit-align-items: flex-start;
+	        align-items: flex-start;
+	-webkit-flex-direction: row;
+	-webkit-flex-wrap: nowrap;
+	        flex-wrap: nowrap;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+}
+.group--icons-submit {
+	display: -webkit-flex;
+	display:         flex;
+	        flex-direction: row;
+
+	width: 770px;
+	margin-top: 20px;
+	margin-left: 55px;
+
+	-webkit-align-content: space-between;
+	        align-content: space-between;
+	-webkit-align-items: flex-start;
+	        align-items: flex-start;
+	-webkit-flex-direction: row;
+	-webkit-flex-wrap: nowrap;
+	        flex-wrap: nowrap;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+}
+.group--avatar {
+	width: 45px;
+}
+.group--avatar img {
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+	        border-radius: 5px;
+}
+.group--answer-meta {
+	width: 820px;
+}
+.group--name-time,
+.group--answer-spam {
+	display: -webkit-flex;
+	display:         flex;
+	        flex-direction: row;
+
+	-webkit-align-content: space-between;
+	        align-content: space-between;
+	-webkit-align-items: flex-start;
+	        align-items: flex-start;
+	-webkit-flex-direction: row;
+	-webkit-flex-wrap: nowrap;
+	        flex-wrap: nowrap;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+}
+.group--name-time {
+	margin-bottom: 10px;
+}
+.group--answer-spam {
+	margin-top: 5px;
+}
 
 .category-menu {
 	width: 190px;
@@ -2299,7 +2433,7 @@ h1,
 	content: "";
 
 	background-image: url(../images/icons.png);
-	background-position: -146px -141px;
+	background-position: -266px -146px;
 }
 .category-menu .title--word-color,
 .category-menu h1,
@@ -2331,7 +2465,7 @@ h1,
 	content: "";
 
 	background-image: url(../images/icons.png);
-	background-position: -186px -127px;
+	background-position: -196px -111px;
 }
 .category-menu__item--active span {
 	color: #87496e;
@@ -2344,7 +2478,7 @@ h1,
 	height: 6px;
 
 	background-image: url(../images/icons.png);
-	background-position: -197px -127px;
+	background-position: -329px -185px;
 }
 .category-menu__item--inner .links--blue,
 .category-menu__item--inner .article a,
@@ -2357,7 +2491,7 @@ h1,
 	height: 7px;
 
 	background-image: url(../images/icons.png);
-	background-position: -234px -95px;
+	background-position: -325px -61px;
 }
 
 .category-list h1,
@@ -2470,7 +2604,7 @@ h1,
 	content: "";
 
 	background-image: url(../images/icons.png);
-	background-position: 0 -192px;
+	background-position: -150px -111px;
 }
 
 .related-posts {
@@ -2542,7 +2676,7 @@ h1,
 
 	color: #767676;
 	background-image: url(../images/icons.png);
-	background-position: -234px -68px;
+	background-position: -279px -185px;
 
 	font-size: 12px;
 }
@@ -2648,7 +2782,7 @@ h1,
 
 	border: none;
 	background-image: url(../images/icons.png);
-	background-position: -225px -141px;
+	background-position: -270px -166px;
 }
 .pregnant__line {
 	position: relative;
@@ -2778,7 +2912,7 @@ h1,
 	content: "";
 
 	background-image: url(../images/icons.png);
-	background-position: -172px -68px;
+	background-position: -245px -102px;
 }
 
 .user-profile-wall {
@@ -2963,6 +3097,171 @@ h1,
 	position: absolute;
 	top: -5px;
 	right: 0;
+}
+
+.albums {
+	display: -webkit-flex;
+	display:         flex;
+	        flex-direction: row;
+
+	-webkit-align-content: space-between;
+	        align-content: space-between;
+	-webkit-align-items: flex-start;
+	        align-items: flex-start;
+	-webkit-flex-direction: row;
+	-webkit-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+}
+.albums__item {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	width: 216px;
+	margin-bottom: 15px;
+	padding-top: 6px;
+
+	background: url(../images/album.png) no-repeat top right;
+}
+.albums__item--private {
+	height: 165px;
+	padding: 0;
+
+	background: none;
+}
+.albums__item img {
+	margin-bottom: 10px;
+
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+	        border-radius: 5px;
+}
+.albums__item span {
+	display: block;
+
+	margin-top: 5px;
+
+	color: #9b948f;
+
+	font-size: 12px;
+}
+
+.new-album {
+	position: relative;
+}
+.new-album .btn {
+	float: right;
+
+	margin-top: 20px;
+}
+.new-album .title,
+.new-album h1,
+.new-album .article h2,
+.article .new-album h2,
+.new-album .article h3,
+.article .new-album h3 {
+	position: absolute;
+	top: -38px;
+	right: 0;
+	left: 0;
+
+	text-align: center;
+}
+
+.new-album-form {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	padding: 20px;
+	padding-top: 0;
+
+	border: 1px solid #dae6f1;
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+	        border-radius: 5px;
+	background: #fafcfd;
+}
+.new-album-form label {
+	display: block;
+
+	margin-top: 20px;
+	margin-bottom: 15px;
+
+	color: #6c89a9;
+}
+.new-album-form__info {
+	display: inline-block;
+
+	width: 580px;
+	margin-left: 30px;
+
+	vertical-align: middle;
+}
+.new-album-form__checks {
+	margin-top: 30px;
+}
+.new-album-form__checks .for-check {
+	display: inline;
+}
+.new-album-form__checks .check {
+	display: inline;
+
+	color: #000;
+
+	font-size: 14px;
+}
+
+.comments {
+	margin-top: 30px;
+}
+
+.comments-form {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	margin-top: 15px;
+	padding: 20px 25px;
+
+	border: 1px solid #dae6f1;
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+	        border-radius: 5px;
+	background: #fafcfd;
+}
+.comments-form__title {
+	margin-bottom: 15px;
+
+	color: #6c89a9;
+
+	font-size: 18px;
+}
+.comments-form__icons .icons {
+	margin-right: 10px;
+}
+
+.comments-answers {
+	margin: 20px 0;
+}
+.comments-answers__item {
+	display: -webkit-flex;
+	display:         flex;
+	        flex-direction: row;
+
+	margin-top: 15px;
+	padding-bottom: 15px;
+
+	border-bottom: 1px dotted #e3e3e3;
+
+	-webkit-align-content: space-between;
+	        align-content: space-between;
+	-webkit-align-items: flex-start;
+	        align-items: flex-start;
+	-webkit-flex-direction: row;
+	-webkit-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
 }
 
 html > body * > .input-line--icons-woman:before,

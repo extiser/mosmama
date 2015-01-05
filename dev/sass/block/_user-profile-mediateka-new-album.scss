@@ -1,0 +1,47 @@
+.new-album {
+    position: relative;
+    .btn {
+    	float: right;
+	margin-top: 20px;
+    }
+    .title {
+    	position: absolute;
+        top: -38px;
+        text-align: center;
+	left: 0;
+	right: 0;
+    }
+}
+
+.new-album-form {
+    background: #fafcfd;
+    border: 1px solid #dae6f1;
+    @include border-radius(5px);
+    @include box-sizing;
+    padding: 20px;
+    padding-top: 0;
+
+    label {
+        color: #6c89a9;
+        display: block;
+        margin-bottom: 15px;
+        margin-top: 20px;
+    }
+    &__info {
+        width: 580px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 30px;
+    }
+    &__checks {
+	margin-top: 30px;
+        .for-check {
+            display: inline;
+        }
+        .check {
+            display: inline;
+            font-size: 14px;
+            color: #000;
+        }
+    }
+}

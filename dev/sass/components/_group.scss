@@ -93,4 +93,11 @@
 	&--answer-spam {
 		margin-top: 5px;
 	}
+	&--title-search {
+		@include flex(flex, space-between, center, row, space-between, nowrap);	
+		margin-bottom: 35px;
+	}
+	&--community-fulllist {
+		@include flex(flex, space-between, center, row, space-between, wrap);	
+	}
 }

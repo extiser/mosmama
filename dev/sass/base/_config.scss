@@ -73,6 +73,10 @@ h1 {
     }
 }
 
+.clearfix {
+	clear: both;
+}
+
 @mixin flex (
 	$display-flex:flex, 
 	$justify-content:flex-start, 

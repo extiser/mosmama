@@ -253,6 +253,10 @@ strong {
 	width: 880px;
 }
 
+.clearfix {
+	clear: both;
+}
+
 /*
 SCSS variables are information about icon's compiled state, stored under its original file name
 
@@ -2404,6 +2408,38 @@ h1,
 .group--answer-spam {
 	margin-top: 5px;
 }
+.group--title-search {
+	display: -webkit-flex;
+	display:         flex;
+	        flex-direction: row;
+
+	margin-bottom: 35px;
+
+	-webkit-align-content: space-between;
+	        align-content: space-between;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-flex-direction: row;
+	-webkit-flex-wrap: nowrap;
+	        flex-wrap: nowrap;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+}
+.group--community-fulllist {
+	display: -webkit-flex;
+	display:         flex;
+	        flex-direction: row;
+
+	-webkit-align-content: space-between;
+	        align-content: space-between;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-flex-direction: row;
+	-webkit-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+}
 
 .category-menu {
 	width: 190px;
@@ -3210,6 +3246,85 @@ h1,
 	color: #000;
 
 	font-size: 14px;
+}
+
+.community-fulllist {
+	margin-bottom: 25px;
+	padding: 25px;
+
+	border: 1px solid #dae6f1;
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+	        border-radius: 5px;
+	background: #eff5fa url(../images/community-fulllist-top.png) repeat-x center 10px;
+}
+.community-fulllist .form-search--community-fulllist {
+	width: 552px;
+}
+.community-fulllist .form-search__search-line--blue {
+	width: 469px;
+}
+
+.community-block {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	width: 535px;
+	margin-bottom: 35px;
+}
+.community-block .links--pink {
+	display: inline-block;
+
+	font-size: 22px;
+}
+.community-block img {
+	float: left;
+
+	margin-right: 25px;
+
+	border: 3px solid #fff;
+	-webkit-border-radius: 10px;
+	   -moz-border-radius: 10px;
+	        border-radius: 10px;
+}
+.community-block__tags {
+	display: inline-block;
+
+	width: 335px;
+	margin-top: 10px;
+}
+.community-block__tags .links--dot {
+	position: relative;
+	left: 10px;
+
+	display: inline-block;
+
+	margin-right: 15px;
+
+	font-size: 14px;
+}
+.community-block__tags .links--dot:before {
+	position: absolute;
+	top: 8px;
+	left: -10px;
+
+	display: block;
+
+	width: 6px;
+	height: 6px;
+
+	content: "";
+
+	background-image: url(../images/icons.png);
+	background-position: -196px -111px;
+}
+.community-block__users {
+	margin-top: 12px;
+
+	color: #8894a3;
+
+	font-size: 12px;
+	font-style: italic;
 }
 
 .comments {

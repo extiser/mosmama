@@ -1,0 +1,20 @@
+doctype transitional
+html(xmlns='http://www.w3.org/1999/xhtml')
+	include partials/head.jade
+	body
+		.container
+			include partials/header-inside.jade
+			// end header
+			
+			.wrapper
+				include blocks/breadcrumbs.jade
+				// end breadcrumbs
+
+				include blocks/community-fulllist.jade
+				// end community-fulllist
+				
+
+			include partials/footer.jade
+			//end footer
+
+		include partials/scripts.jade

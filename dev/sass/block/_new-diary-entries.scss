@@ -1,0 +1,44 @@
+.new-diary-entries{
+	padding: 38px 0px 27px 0;
+}
+.panel-diaries{
+	position: relative;
+	padding: 0 20px 0 0;
+	&__slash{
+		position: absolute;
+		top: 0px;
+		left: 50%;
+		margin-left: -17px;
+	}
+	&__link{
+		margin: 0 0 0 25px;
+		&--first{
+			margin: 0 25px 0 20px;
+		}
+	}
+}
+
+
+.entries{
+	margin: 10px 0 0 0;
+	width: 336px;
+	padding: 15px 20px 0px 0;
+	@include box-sizing;
+	&--center{
+		width: 405px;
+		padding: 15px 35px 0px 32px;
+		border-right: 1px dotted #e3e3e3;
+		border-left: 1px dotted #e3e3e3;
+	}
+	.entry{
+		margin: 0 0 25px 0;
+		&__avatar{
+		float: left;
+		margin: 0 15px 0 0;
+	}
+		&__link{
+			@include clearfix;
+			line-height: 21px;
+		}
+	}
+}

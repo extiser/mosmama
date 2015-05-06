@@ -1,0 +1,103 @@
+.group{
+	&--inside {
+		@include flex(flex, space-between, flex-start, row, space-between, nowrap);
+	}
+	&--category-list__item {
+		@include flex(flex, space-between, flex-start, row, space-between, nowrap);
+		border-bottom: 1px dotted #e9e9e9;
+		padding: 22px 0;
+	}
+	&--footer {
+		@include flex(flex, space-between, center, row, space-between, nowrap);
+	}
+	&--social-like {
+		@include flex(flex, space-between, center, row, space-between, nowrap);
+		border-bottom: 1px dotted #e9e9e9;
+		padding: 22px 0;
+	}
+	&--related-posts {
+		@include flex(flex, space-between, flex-start, row, space-between, wrap);
+	}
+	&--search-menu {
+		width: 631px;
+	}
+	&--articles-sidebar {
+		@include flex(flex, space-between, flex-start, row, space-between, nowrap);
+		padding-bottom: 45px;
+	}
+	&--photos-wall-speed-registration{
+		@include flex(flex, space-between, flex-start, row, space-between, nowrap);
+	}
+	&--entries{
+		@include flex(flex, space-between, flex-start, row, space-between, nowrap);
+	}
+	&--title{
+		@include flex(flex, space-between, flex-start, row, space-between, nowrap);
+	}
+	&--avatar-user-profile-child {
+		@include flex(flex, space-between, flex-start, row, space-between, nowrap);
+	}
+	&--pregnant-menu {
+		@include flex(flex, space-between, center, row, space-between, nowrap);
+	}
+	&--buttons-dnevnik {
+		.btn {
+			margin-right: 10px;
+		}
+	}
+	&--meta-info {
+		text-align: right;
+		.meta-info {
+			display: inline-block;
+			margin-left: 15px;
+			margin-top: 10px;
+		}
+	}
+
+	&--small-profile-buttons {
+		@include flex(flex, space-between, flex-start, row, space-between, nowrap);
+		padding: 20px 0;
+		border-top: 2px dotted #e9e9e9;
+		border-bottom: 2px dotted #e9e9e9;
+	}
+	&--profiles-avatar {
+		width: 99px;
+	}
+	&--profiles-items {
+		width: 280px;
+	}
+	&--profile-form {
+		@include flex(flex, space-between, flex-start, row, space-between, nowrap);
+	}
+	&--icons-submit {
+		width: 770px;
+		@include flex(flex, space-between, flex-start, row, space-between, nowrap);	
+		margin-left: 55px;
+		margin-top: 20px;
+	}
+	&--avatar {
+		width: 45px;
+		img {
+			@include border-radius(5px);
+		}
+	}
+	&--answer-meta {
+		width: 820px;
+	}
+	&--name-time, &--answer-spam {
+		@include flex(flex, space-between, flex-start, row, space-between, nowrap);	
+	}
+	&--name-time {
+		margin-bottom: 10px;
+	}
+	&--answer-spam {
+		margin-top: 5px;
+	}
+	&--title-search {
+		@include flex(flex, space-between, center, row, space-between, nowrap);	
+		margin-bottom: 35px;
+	}
+	&--community-fulllist {
+		@include flex(flex, space-between, center, row, space-between, wrap);	
+	}
+}

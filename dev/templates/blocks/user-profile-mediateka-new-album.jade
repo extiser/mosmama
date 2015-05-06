@@ -1,0 +1,35 @@
+.user-profile-wall
+	.user-profile-wall-menu
+		ul.user-profile-wall-menu__list-items
+			li.user-profile-wall-menu__item
+				a(href="#").links.links--blue Вернуться назад
+	// end user-profile-wall-menu
+
+	.user-profile-wall-items
+		.new-album
+			.title Новый фотоальбом
+			.new-album-form
+				form
+					label Название альбома:
+					input(type="text").textbox.textbox--input
+
+					label Добавить фотографии:
+					a(href="#").select-foto-in-album
+					.new-album-form__info
+						p Вы можете одновременно загрузить до 
+							strong 10 изображений. 
+						p Размер каждой фотографии не больше 
+							strong 5 Мб
+
+					.new-album-form__checks
+						label.for-check Кто видит:
+						label(for="all").check
+							input(type="radio", name="all") 
+							| Все
+						label(for="iam").check
+							input(type="radio", name="iam") 
+							| Только я
+						label(for="friends").check
+							input(type="radio", name="friends") 
+							| Друзья
+			input(type="submit", value="Сохранить").btn.btn--pink.btn--height45

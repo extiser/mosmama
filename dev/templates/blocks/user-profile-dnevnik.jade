@@ -1,0 +1,35 @@
+.user-profile-wall
+	.user-profile-wall-menu
+		ul.user-profile-wall-menu__list-items
+			li.user-profile-wall-menu__item.user-profile-wall-menu__item--active
+				a(href="#").links.links--blue Опубликованные
+			li.user-profile-wall-menu__item
+				a(href="#").links.links--blue Черновики
+			li.user-profile-wall-menu__item
+				a(href="#").links.links--blue Архив
+		a(href="#").btn.btn--pink.btn--user-profile-wall-menu Добавить запись
+	// end user-profile-wall-menu
+
+	.user-profile-wall-items
+		- for (var i = 0; i < 6; ++i) {
+		.dnevnik-article
+			a(href="#").links.links--link22.links--blue Здоровая пища: что можно есть на протяжении беременности
+			p Няня сразу дала понять всем в больнице, что к Андрюше надо относиться с уважением. «А то, думали, раз сирота, можно ребенку завтрак не дать в день госпитализации!», - ворчит Наталья. Они с Андрюшей стали с первого дня любимцами медперсонала, юных пациентов и их родителей.
+			img(src="images/temp/article.png")
+			p Няня сразу дала понять всем в больнице, что к Андрюше надо относиться с уважением. «А то, думали, раз сирота, можно ребенку завтрак не дать в день госпитализации!», - ворчит Наталья. Они с Андрюшей стали с первого дня любимцами медперсонала, юных пациентов и их родителей.
+			.dnevnik-article__meta
+				.group.group--buttons-dnevnik
+					a(href="#").btn.btn--white.btn--height38.btn--icons-pencil Редактировать
+					a(href="#").btn.btn--white.btn--height38.btn--icons-crimson-cross Удалить
+				.group.group--meta-info
+					a(href="#").links.links--blue.links--link16 Читать далее
+					div
+						span.meta-info.meta-info--comments 18 комментариев
+						span.meta-info.meta-info--time 17 минут назад
+						span.meta-info.meta-info--likes 789
+		- }
+		// end dnevnik-article
+
+		
+
+		include pagination.jade

@@ -1,0 +1,37 @@
+doctype transitional
+html(xmlns='http://www.w3.org/1999/xhtml')
+	include partials/head.jade
+	body
+		.container
+			include partials/header.jade
+			// end header
+
+			include blocks/new-diary-entries.jade
+			// end new-diary-entries
+
+			include blocks/popular-community.jade
+			// end popular-community
+
+			include blocks/advertise-full.jade
+			// end advertise-full;
+
+			.wrapper
+				.group.group--articles-sidebar
+					include blocks/articles-for-moms.jade
+					// end articles-for-moms
+
+					.sidebar
+						include blocks/community-entries.jade
+						// end community-entries
+
+						include blocks/advertise-sidebar.jade
+						// end advertise-sidebar
+
+			include blocks/about.jade
+			//end about
+
+			include partials/footer.jade
+			//end footer
+			// end end
+
+		include partials/scripts.jade

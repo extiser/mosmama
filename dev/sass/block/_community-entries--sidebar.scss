@@ -1,0 +1,18 @@
+.community-entries {
+    &--sidebar {
+        margin: 25px 0;
+    }
+}
+.community-entries-list {
+    &--sidebar {
+        width: 240px;
+    }
+    &__item {
+        &--sidebar {
+            padding: 19px;
+            &:before {
+                display: none;
+            }
+        }
+    }
+}

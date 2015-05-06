@@ -1,0 +1,32 @@
+.albums {
+    @include flex(flex, space-between, flex-start, row, space-between, wrap);
+    &__item {
+        width: 216px;
+        margin-bottom: 15px;
+        padding-top: 6px;
+
+        background: url(../images/album.png) no-repeat top right;
+
+        @include box-sizing;
+        &--private {
+            height: 165px;
+
+            background: none;
+            padding: 0;
+        }
+        img {
+            margin-bottom: 10px;
+
+            @include border-radius(5px);
+        }
+        span {
+            font-size: 12px;
+
+            display: block;
+
+            margin-top: 5px;
+
+            color: #9b948f;
+        }
+    }
+}

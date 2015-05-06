@@ -1,0 +1,15 @@
+.related-posts {
+	margin: 20px 0;
+	&__item {
+		width: 328px;
+		margin-top: 10px;
+		img {
+			float: left;
+			margin-right: 10px;
+		}
+		a {
+			position: relative;
+			top: 15px;
+		}
+	}
+}

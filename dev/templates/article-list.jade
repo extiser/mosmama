@@ -1,0 +1,36 @@
+doctype transitional
+html(xmlns='http://www.w3.org/1999/xhtml')
+	include partials/head.jade
+	body
+		.container
+			include partials/header-inside.jade
+			// end header
+			
+			.wrapper
+				include blocks/breadcrumbs.jade
+				// end breadcrumbs
+				
+				.group.group--inside
+					.sidebar-left
+						include blocks/category-menu.jade
+					// end sidebar-left
+
+					.content
+						include blocks/category-list.jade
+					// end content
+
+					.sidebar-right
+						include blocks/advertise-sidebar__small.jade
+						//end advertise-sidebar__small
+
+						include blocks/community-entries--sidebar.jade
+						//end community-entries--sidebar
+
+						include blocks/advertise-sidebar__small.jade
+						//end advertise-sidebar__small
+					// end sidebar-right
+
+			include partials/footer.jade
+			//end footer
+
+		include partials/scripts.jade

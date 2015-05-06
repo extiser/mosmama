@@ -1,0 +1,1 @@
+!function(t){t.fn.colorized=function(){var t=this.text(),i=t.split(" "),n=i.length-1,l=t.split(i[n]).join('<span class = "title--word-color">'+i[n]+"</span>");this.html(l)}}(jQuery);

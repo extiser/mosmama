@@ -1,0 +1,82 @@
+.article {
+    a {
+        @extend .links--blue;
+    }
+    p {
+        margin-top: 15px;
+    }
+    h1 {
+        font-family: Arial;
+        font-size: 22px;
+        line-height: 24px;
+
+        text-transform: none;
+    }
+    h2 {
+        font-size: 20px;
+        margin-top: 10px;
+
+        @extend h1;
+    }
+    h3 {
+        font-size: 18px;
+
+        @extend h2;
+    }
+    img {
+        margin: 10px 0;
+
+        @include border-radius(5px);
+    }
+    ol {
+        counter-reset: point;
+        li {
+            position: relative;
+
+            padding-left: 22px;
+
+            @extend p;
+            &:before {
+                font-size: 14px;
+                font-weight: bold;
+                line-height: 18px;
+
+                position: absolute;
+                top: 1px;
+                left: 0;
+
+                width: 18px;
+                height: 18px;
+
+                content: counter(point);
+                counter-increment: point 1;
+                text-align: center;
+
+                color: #fff;
+                background: #5598ba;
+
+                @include border-radius(50%);
+            }
+        }
+    }
+    ul {
+        li {
+            position: relative;
+
+            padding-left: 22px;
+
+            @extend p;
+            &:before {
+                position: absolute;
+                top: 5px;
+                left: 0;
+
+                display: block;
+
+                content: '';
+
+                @include sprite($s-ul);
+            }
+        }
+    }
+}

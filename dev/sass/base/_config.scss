@@ -1,0 +1,94 @@
+@import 'compass/reset';
+@import 'compass/css3';
+@import 'compass/utilities';
+
+@import 'fonts';
+
+input, select, textarea {
+	&:focus {
+		outline: none;
+		color: #333;
+	}
+	@include input-placeholder {
+		font-style: italic;
+	}
+}
+
+body{
+	font: {
+		family: Arial;
+		size: 14px;
+	}
+	color: #333;
+	background-color: #e5e5e5;
+}
+
+a {
+	text-decoration: none;
+	color: #2c5b91;
+}
+
+p {
+	color: #333;
+	font: {
+		size: 14px;
+	}
+	line-height: 22px;
+}
+
+strong {
+	font-weight: bold;
+}
+
+h1 {
+	@extend .title;
+	@extend .title--word-color;
+}
+
+.container{
+	width: 1200px;
+	@include box-sizing;
+	color: #fff;
+	margin: auto;
+	background: #fff;
+}
+
+.wrapper {
+	width: 1200px;
+	@include box-sizing;
+	padding: 0 35px;
+	position: relative;
+}
+
+.sidebar {
+	position: absolute;
+	height: 100%;
+	right: 35px;
+}
+
+.content {
+    width: 674px;
+    &--without-sidebar {
+    	width: 880px;
+    }
+}
+
+.clearfix {
+	clear: both;
+}
+
+@mixin flex (
+	$display-flex:flex, 
+	$justify-content:flex-start, 
+	$align-items:flex-start, 
+	$flex-direction:row, 
+	$align-content:stretch, 
+	$flex-wrap:nowrap) {
+	@include display-flex($display-flex);
+	@include justify-content($justify-content);
+	@include align-items($align-items);
+	@include flex-direction($flex-direction);
+	@include align-content($align-content);
+	@include flex-wrap($flex-wrap);
+}
+

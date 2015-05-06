@@ -1,0 +1,35 @@
+.calendar-ovulation {
+	width: 720px;
+	border: 1px solid #e7e7e7;
+	@include border-radius(5px);
+	@include box-sizing;
+	padding: 20px;
+	background: #fffcfd url(../images/calendar-ovulation.png) no-repeat 495px 65px;
+	&__form {
+		width: 380px;
+		@include flex(flex, left, flex-start, row, space-between, wrap);
+		.group {
+			&--inline {
+				margin-right: 10px;
+				margin-top: -8px;
+			}
+			&--submit {
+				width: 380px;
+				margin-top: 15px;
+			}
+		}
+	}
+	&__result {
+		width: 678px;
+		background: url(../images/calendar-ovulation__result.png) no-repeat top center;
+		margin: 35px auto 0; 
+		padding-top: 60px;
+		@include flex(flex, space-between, flex-start, row, space-between, wrap);
+	}
+	&__annotation {
+		width: 678px;
+		border-top: 1px solid #e7e7e7;
+		@include flex(flex, space-between, flex-start, row, space-between, wrap);
+		padding-top: 25px;
+	}
+}

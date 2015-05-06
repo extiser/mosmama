@@ -1,0 +1,16 @@
+.category-list
+	h1 Питание ребенка
+	p Со дня своего основания Nike постоянно предлагает инновационные идеи в дизайне и эргономичности кроссовок. В производстве самых популярных моделей в основном используется натуральная кожа, но и искусственный материал на фабриках Nike – только высочайшего качества. В летнее время стоит выбрать беговые модели с элементами текстиля-сетки, который отлично пропускает воздух и дает ноге дышать.
+	- for (var i = 0; i < 7; ++i) {
+	.group.group--category-list__item
+		.category-list__item
+			img(src="images/temp/category-list__item.png")
+			a(href="#").links.links--blue Здоровая пища: что можно есть на протяжении беременности
+		.category-list__item
+			img(src="images/temp/category-list__item.png")
+			a(href="#").links.links--blue Здоровая пища: что можно есть на протяжении беременности
+		.category-list__item
+			img(src="images/temp/category-list__item.png")
+			a(href="#").links.links--blue Здоровая пища: что можно есть на протяжении беременности
+	- }
+	include pagination.jade

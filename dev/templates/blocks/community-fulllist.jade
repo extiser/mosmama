@@ -1,0 +1,24 @@
+.community-fulllist
+	.group.group--title-search
+		.title Все сообщества
+		.form-search.form-search--community-fulllist
+			form
+				input(type="text", placeholder="Поиск по сообществам").form-search__search-line.form-search__search-line--blue
+				input(type="submit", value="Найти").form-search__search-button.form-search__search-button--blue
+				// end form-search community
+
+	.group.group--community-fulllist
+		- for (var i = 0; i < 10; ++i) {
+		.community-block
+			img(src="images/temp/community-block-fulllist.png")
+			a(href="#").links.links--pink Беременность и роды
+			.community-block__tags
+				a(href="#").links.links--blue.links--dot Хочу ребёнка
+				a(href="#").links.links--blue.links--dot Планирование беременности
+				a(href="#").links.links--blue.links--dot Беременность
+				a(href="#").links.links--blue.links--dot Роды
+				a(href="#").links.links--blue.links--dot Выбор роддома
+				a(href="#").links.links--blue.links--dot ЭКО
+			.community-block__users 24 936 участников
+			.clearfix
+		- }
